@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi Dadhaniya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="top-btn" id="topBtn">
+        <a href="#"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="top-btn" id="topBtn">
+        <a href="#"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+    </div>
+
+    <nav>
+        <a href="#" id="logo">Portfulio</a>
+        <i id="showmenu" onclick="showmenu()" class="fa fa-bars menu" aria-hidden="true"></i>
+        <ul id="ul">
+            <a onclick="closemenu()"><i id="closemenu" class="fa fa-window-close" aria-hidden="true"></i></a>
+            <li class="link"><a data-easing="easeInOutQuart" id="home" href="#">Home</a></li>
+            <li class="link"><a data-easing="easeInOutQuart" id="Skills" href="#second">Skills</a></li>
+            <li class="link"><a data-easing="easeInOutQuart" id="Development" href="#third">Development</a></li>
+            <li class="link"><a data-easing="easeInOutQuart" id="About" href="#forth">About Me</a></li>
+            <li class="link"><a data-easing="easeInOutQuart" id="Contact" href="#fifth">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="first">
+
+        <div class="heading">
+            <h1>Hi,<br>I'm <span id="name">Abhi</span>, <br> Web Designer. </h1>
+            <p>HTML / CSS / JAVASCRIPT</p>
+            <a href="#">Contact Me</a>
+        </div>
+        <div class="photo">
+            <!-- use new black and white photo instade of this photo... -->
+            <img src="mypic.jpeg" width="200px">
+        </div>
+
+    </section>
+
+    <section id="second">
+        <h2><i class="fa fa-code" aria-hidden="true"></i> <u> Skills</u></h2>
+        <div class="main">
+            <p>HTML</p>
+            <div class="container">
+                <div id="html" class="skill html">90 %</div>
+            </div>
+            <p>CSS</p>
+            <div class="container">
+                <div id="css" class="skill css">80 %</div>
+            </div>
+            <p>JAVA SCRIPT</p>
+            <div class="container">
+                <div id="js" class="skill js">70 %</div>
+            </div>
+            <p>GRAPHIC DESIGN</p>
+            <div class="container">
+                <div id="graphic" class="skill graphic">50 %</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="third">
+
+        <h2><i class="fa fa-jsfiddle" aria-hidden="true"></i> <u>Development</u></h2>
+        <h2><i class="fa fa-user-circle" aria-hidden="true"></i> <u>About Me</u></h2>
+        <h2><i class="fa fa-id-badge" aria-hidden="true"></i> <u>Contact Me</u></h2>
+
+
+
+    </section>
+
+    <!-- there are many of my projects are useful for you like a tool -->
+
+    <script>
+        console.log('done');
+
+        let logo = document.getElementById('logo');
+        let ul = document.getElementById('ul');
+
+        // skill bar progress, when page scroll to skills
+        let skill = document.getElementsByClassName('skill');
+
+        window.onscroll = function () {
+            if (scrollY < 136) {
+                document.getElementById('topBtn').style.opacity = '0';
+                document.querySelector('nav').style.background = 'rgb(5,5,5)';
+                skillAnimate();
+                skillNull();
+            }
+            else {
+                document.getElementById('topBtn').style.opacity = '1';
+                document.querySelector('nav').style.background = 'rgb(118,33,236)';
+                skilFill();
+            }
+        }
+
+        function skillAnimate() {
+            Array.from(skill).forEach(function (element) {
+                element.style.animation = 'load 1.3s 0s cubic-bezier(0,-0.01, 0.04, 1.01)';
+            });
+        }
+
+        function skilFill() {
+            document.getElementById('html').style.width = '90%';
+            document.getElementById('css').style.width = '80%';
+            document.getElementById('js').style.width = '70%';
+            document.getElementById('graphic').style.width = '50%';
+        }
+
+        function skillNull() {
+            document.getElementById('html').style.width = '0%';
+            document.getElementById('css').style.width = '0%';
+            document.getElementById('js').style.width = '0%';
+            document.getElementById('graphic').style.width = '0%';
+        }
+
+        if (window.innerWidth < 670) {
+            document.getElementById('first').addEventListener('click', closemenu);
+            document.getElementById('second').addEventListener('click', closemenu);
+            // document.getElementById('third').addEventListener('click', closemenu);
+            // document.getElementById('forth').addEventListener('click', closemenu);
+            // document.getElementById('fifth').addEventListener('click', closemenu);
+            // document.getElementById('sixth').addEventListener('click', closemenu);
+
+            document.getElementById('home').addEventListener('click', closemenu);
+            document.getElementById('Skills').addEventListener('click', closemenu);
+            document.getElementById('Development').addEventListener('click', closemenu);
+            document.getElementById('Contact').addEventListener('click', closemenu);
+            document.getElementById('About').addEventListener('click', closemenu);
+        }
+
+        function showmenu() {
+            ul.style.left = '0';
+        }
+        function closemenu() {
+            ul.style.left = '-130px';
+        }
+
+    </script>
+
+</body>
+
+</html>
