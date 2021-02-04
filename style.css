@@ -1,19 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap'); */
+
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+
+:root{
+    --font1: 'Titillium Web', sans-serif;
+    --font2: 'Lobster Two', cursive;
+    --font3: 'PT Sans', sans-serif;
+    --font4: 'Oxygen', sans-serif;
+    /* --color1: #f16334; */
+    /* --color1: rgb(0, 183, 255); */
+    --color1: rgb(82, 44, 250);
+    --color2: white;
+    --color3: #43464b;
+    --color4: rgb(240, 240, 240);
+    
+    
+    /*--color1: rgb(10, 10, 10);
+    --color2: rgb(31, 31, 31);
+    --color4: rgb(10,33,53);
+    --color6: rgb(5,5,5); */
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--font1);
     transition: 0.6s ease;
-}
-:root{
-    --color1: rgb(10, 10, 10);
-    --color2: rgb(31, 31, 31);
-    --color3: rgb(255, 0, 106);
-    --color4: rgb(10,33,53);
-    --color5: rgb(118,33,236);
-    --color6: rgb(5,5,5);
 }
 .top-btn{
     position: fixed;
@@ -34,18 +51,6 @@
 html{
     scroll-behavior: smooth;
 }
-#menu{
-    position: relative;
-    top: -7px;
-}
-#closemenu,
-#showmenu{
-    font-size: 20px;
-    color: whitesmoke;
-    float: none;
-    display: none;
-    cursor: pointer;
-}
 .top-btn{
     position: fixed;
     bottom: 30px;
@@ -54,116 +59,58 @@ html{
     opacity: 0;
     z-index: 100;
 }
-nav{
-    position: sticky;
-    top: 0;
-    background: var(--color6);
-    backdrop-filter: blur(1.6px);
-    padding: 25px;
-    z-index: 10;
-    transition: .4s ease;
-}
-ul{
-    position: relative;
-    top: -10px;
-    float: right;
-    right: 0;
-    transition: all 0.2s ease-out;
-}
-ul li{
-    margin: 0 5px;
-    display: inline;
-    list-style-type: none;
-    cursor: pointer;
-}
-#logo{
-    position: relative;
-    top: -17px;
-    float: left;
-    text-decoration: none;
-    font-family: var(--font1);
-    color: whitesmoke;
-    font-size: 23px;
-    transition: .4s ease;
-}
-ul li a{
-    margin: 0 5px 0;
-    font-family: 'Oxygen', sans-serif;
-    text-decoration: none;
-    color: whitesmoke;
-}
 
                             /* First section  :  Header */
 
 #first{
-    position: relative;
-    top: -2px;
-    width: 100%;
-    height: 91vh;
-    /* background: linear-gradient(23deg,rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.623)),url(https://miro.medium.com/max/10368/1*d7Cfi15FP4jaH8ysMw-ojw.jpeg); */
-    /* background: linear-gradient(23deg,rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.623)),url(https://i.pinimg.com/originals/4d/15/5c/4d155c6f7e5b1c6942059703c403ecaf.jpg); */
-    /* background: linear-gradient(23deg,rgba(0, 0, 0, 0.719),rgba(0, 0, 0, 0.774)),url(4.jpg); */
-    background: #f16334;
-    /* background-attachment: fixed; */
-    background-position: center;
-    background-size: cover;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color4);
 }
 #first .heading{
-    color: white;
-    position: relative;
-    margin-top: 150px;
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #first .heading h1{
-    letter-spacing: 1.5px;
-    line-height: 33px;
-    font-family: 'Lato', sans-serif;
-}
-#first .heading p{
-    color: rgba(255, 255, 255, 0.555);
-    margin-top: 15px;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-#name{
     color: var(--color3);
+    font-size: 70px;
+    font-family: var(--font4);
+    font-weight: bold;
+}
+#first .heading #webDesigner{
+    margin: 5px auto 20px;
+    padding-right: 20px;
+    text-align: right;
+    color: var(--color1);
+    font-size: 30px;
+    font-weight: bold;
 }
 #first .heading a{
-    position: relative;
-    top: 20px;
-    color: white;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    padding: 5px 30px;
+    color: var(--color1);
+    font-size: 25px;
+    border: 2px solid var(--color1);
     text-decoration: none;
-    background: var(--color5);
     border-radius: 3px;
-    padding: 7px;
-    font-weight: bold;
-    letter-spacing: .8px;
+    transition: 0.3s ease;
+    box-shadow: 0 20px 28px 0 rgba(82, 44, 250, 0.226);
 }
 #first .heading a:hover{
-    color: var(--color5);
-    background: white;
-}
-#first .photo{
-    margin-top: 140px;
-    margin-right: 40px;
-}
-#first .photo img{
-    border-radius: 50%;
+    background: var(--color1);
+    color: var(--color2);
+    border: 2px solid var(--color1);
 }
 
                         /* second section  :  Skills */
 #second{
-    margin-top: -2px;
-    background: linear-gradient(23deg,rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.623)),url(bg2.jpg);
-    background-position: center;
-    /* background-attachment: fixed; */
-    background-size: cover;
-    font-family: 'Oxygen', sans-serif;
+    background: linear-gradient(180deg, var(--color1), rgb(25, 2, 129));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,44 +126,44 @@ ul li a{
 {
     margin: 30px auto;
     letter-spacing: 0.5px;
-    color: whitesmoke;
-    font-family: 'Oxygen', sans-serif;
+    color: var(--color2);
+    font-family: var(--font1);
+    font-size: 50px;
 }
 .main p{
     margin: 12px auto 5px;
-    padding: 0 0 0 10px;
-    color: whitesmoke;
+    padding: 0 0 0 5px;
+    font-family: var(--font1);
+    letter-spacing: .3px;
+    color: var(--color2);
+    font-size: 20px;
 }
 .container{
     margin: 0 auto;
     width: 400px;
-    border-radius: 50px;
+    border-radius: 4px;
     overflow: hidden;
-    background-color: #ddd;
+    background-color: rgba(255, 255, 255, 0.26);
 }
+
 .skill{
+    height: 18px;
     text-align: right;
     padding: 5px 10px;
-    color: white;
     font-weight: bold;
-    letter-spacing: 0.6px;
-    word-spacing: -2px;
+    background:  var(--color4);
 }
 .html{
-    /* width: 90%; */
-    background-color: #00aaff;
+    width: 90%;
 }
 .css{
-    /* width: 80%; */
-    background-color: #3ef857;
+    width: 80%;
 }
 .js{
-    /* width: 75%; */
-    background-color: #e83045;
+    width: 75%;
 }
 .graphic{
-    /* width: 50%; */
-    background-color: #8841eb;
+    width: 50%;
 }
 
 @keyframes load{
@@ -264,71 +211,24 @@ ul li a{
     .top-btn a{
         padding: 9px 12px;
     }
-    #first .header p{
-        font-size: 14px;
-        width: 90%;
+    #first .heading h1{
+        font-size: 60px;
+        text-align: center;
     }
-    ul{
-        width: 130px;
-        height: 100vh;
-        /* background: #0af; */
-        background: var(--color5);
-        position: absolute;
-        top: 0;
-        left: -130px;
-        right: 0;
-        z-index: 20;
-        display: block;
+    #first .heading #webDesigner{
+        font-size: 25px;
     }
-    #closemenu{
-        margin: 20px 0 10px 10px;
-        display: block;
-        color: whitesmoke;
-        cursor: pointer;
+    #first .heading a{
+        font-size: 20px;
     }
-    #showmenu{
-        color: whitesmoke;
-        float: right;
-        display: block;
-        position: relative;
-        top: -7px;
-        cursor: pointer;
+    #second h2,
+    #third h2,
+    #forth h2,
+    #fifth h2
+    {
+        font-size: 40px;
     }
-    ul li{
-        padding: 10px 0;
-        display: block;
-        cursor: pointer;
-    }
-    nav ul li a{
-        color: whitesmoke;
-    }
-    #first{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    #first{
-        /* background: var(--color6); */
-        background: linear-gradient(23deg,rgba(0, 0, 0, 0.719),rgba(0, 0, 0, 0.774)),url(4.jpg);
-        /* background: linear-gradient(23deg,rgba(0, 0, 0, 0.466),rgba(0, 0, 0, 0)),url(pastel-tone-purple-pink-blue-gradient-defocused-abstract-photo-smooth-lines-color-background_49683-4149.jpg); */
-        background-position: center;
-        background-size: cover;
-        /* padding: 100px 0; */
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    #first .heading{
-        margin-top: 10px;
-        margin-left: 0px;
-    }
-    #first .photo{
-        position: relative;
-        top: -40px;
-        margin-bottom: 10px;
-        margin-top: 0px;
-        margin-right: 0px;
+    .main p{
+        font-size: 17px;
     }
 }

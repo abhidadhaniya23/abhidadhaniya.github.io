@@ -16,11 +16,7 @@
         <a href="#"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
     </div>
 
-    <div class="top-btn" id="topBtn">
-        <a href="#"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
-    </div>
-
-    <nav>
+    <!-- <nav>
         <a href="#" id="logo">Portfulio</a>
         <i id="showmenu" onclick="showmenu()" class="fa fa-bars menu" aria-hidden="true"></i>
         <ul id="ul">
@@ -31,18 +27,15 @@
             <li class="link"><a data-easing="easeInOutQuart" id="About" href="#forth">About Me</a></li>
             <li class="link"><a data-easing="easeInOutQuart" id="Contact" href="#fifth">Contact Me</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
     <section id="first">
 
         <div class="heading">
-            <h1>Hi,<br>I'm <span id="name">Abhi</span>, <br> Web Designer. </h1>
-            <p>HTML / CSS / JAVASCRIPT</p>
+            <h1 id="name">Hi, I am Abhi.</h1>
+            <p id="webDesigner">&#10084; Web Designer</p>
+            <!-- <p id="desc">My Description</p> -->
             <a href="#">Contact Me</a>
-        </div>
-        <div class="photo">
-            <!-- use new black and white photo instade of this photo... -->
-            <img src="mypic.jpeg" width="200px">
         </div>
 
     </section>
@@ -50,32 +43,32 @@
     <section id="second">
         <h2><i class="fa fa-code" aria-hidden="true"></i> <u> Skills</u></h2>
         <div class="main">
-            <p>HTML</p>
+            <p>HTML 90%</p>
             <div class="container">
-                <div id="html" class="skill html">90 %</div>
+                <div id="html" class="skill html"></div>
             </div>
-            <p>CSS</p>
+            <p>CSS 80%</p>
             <div class="container">
-                <div id="css" class="skill css">80 %</div>
+                <div id="css" class="skill css"></div>
             </div>
-            <p>JAVA SCRIPT</p>
+            <p>JAVA SCRIPT 70%</p>
             <div class="container">
-                <div id="js" class="skill js">70 %</div>
+                <div id="js" class="skill js"></div>
             </div>
-            <p>GRAPHIC DESIGN</p>
+            <p>GRAPHIC DESIGN 50%</p>
             <div class="container">
-                <div id="graphic" class="skill graphic">50 %</div>
+                <div id="graphic" class="skill graphic"></div>
             </div>
         </div>
     </section>
 
-    <section id="third">
+    <!-- <section id="third">
 
         <h2><i class="fa fa-jsfiddle" aria-hidden="true"></i> <u>Development</u></h2>
         <h2><i class="fa fa-user-circle" aria-hidden="true"></i> <u>About Me</u></h2>
         <h2><i class="fa fa-id-badge" aria-hidden="true"></i> <u>Contact Me</u></h2>
 
-    </section>
+    </section> -->
 
     <!-- there are many of my projects are useful for you like a tool -->
 
@@ -91,20 +84,20 @@
         window.onscroll = function () {
             if (scrollY < 136) {
                 document.getElementById('topBtn').style.opacity = '0';
-                document.querySelector('nav').style.background = 'rgb(5,5,5)';
+                // document.querySelector('nav').style.background = 'rgb(5,5,5)';
                 skillAnimate();
                 skillNull();
             }
             else {
                 document.getElementById('topBtn').style.opacity = '1';
-                document.querySelector('nav').style.background = 'rgb(118,33,236)';
+                // document.querySelector('nav').style.background = 'rgb(118,33,236)';
                 skilFill();
             }
         }
 
         function skillAnimate() {
             Array.from(skill).forEach(function (element) {
-                element.style.animation = 'load 1.3s 0s cubic-bezier(0,-0.01, 0.04, 1.01)';
+                element.style.animation = 'load 1.7s 0s ease';
             });
         }
 
@@ -120,28 +113,6 @@
             document.getElementById('css').style.width = '0%';
             document.getElementById('js').style.width = '0%';
             document.getElementById('graphic').style.width = '0%';
-        }
-
-        if (window.innerWidth < 670) {
-            document.getElementById('first').addEventListener('click', closemenu);
-            document.getElementById('second').addEventListener('click', closemenu);
-            // document.getElementById('third').addEventListener('click', closemenu);
-            // document.getElementById('forth').addEventListener('click', closemenu);
-            // document.getElementById('fifth').addEventListener('click', closemenu);
-            // document.getElementById('sixth').addEventListener('click', closemenu);
-
-            document.getElementById('home').addEventListener('click', closemenu);
-            document.getElementById('Skills').addEventListener('click', closemenu);
-            document.getElementById('Development').addEventListener('click', closemenu);
-            document.getElementById('Contact').addEventListener('click', closemenu);
-            document.getElementById('About').addEventListener('click', closemenu);
-        }
-
-        function showmenu() {
-            ul.style.left = '0';
-        }
-        function closemenu() {
-            ul.style.left = '-130px';
         }
 
     </script>
