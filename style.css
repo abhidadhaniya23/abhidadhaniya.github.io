@@ -26,7 +26,7 @@
     --color4: rgb(10,33,53);
     --color6: rgb(5,5,5); */
 }
-svg{
+#svg_first{
     position: absolute;
     bottom: 0;
 }
@@ -229,24 +229,29 @@ html{
                         /* third section  :  development */
 
 #third{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.397)),url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
     background: var(--color4);
+    padding: 0px 0 100px;
     height: 90vh;
 }
 #third h2{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    margin: 0 auto 30px;
+    margin: -60px auto 30px;
     letter-spacing: 0.5px;
     color: var(--color1);
     font-family: var(--font1);
     text-decoration: none;
-    font-size: 50px;
+    font-size: 45px;
 }
-#first .fa,
+#third .fa,
 #second .fa{
     margin: 0 10px 0 0;
 }
@@ -254,7 +259,7 @@ html{
     content: "";
     margin: 0 20px 0;
     position: relative;
-    width: 70%;
+    width: 30%;
     display: block;
     background: var(--color1);
     height: 3px;
@@ -263,12 +268,62 @@ html{
     content: "";
     margin: 0 20px 0;
     position: relative;
-    width: 70%;
+    width: 30%;
     display: block;
     background: var(--color1);
     height: 3px;
 }
+#third .about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#third .photo img{
+    width: 270px;
+    border-radius: 50%;
+}
+#third .about .me{
+    margin: 10px 40px 0;
+    width: 50%;
+    font-weight: bold;
+}
+#third .about .me .desc p{
+    color: var(--color3);
+    font-family: var(--font4);
+    letter-spacing: .2px;
+    line-height: 30px;
+    font-size: 20px;
+}
+#third .social{
+    margin: 20px auto 0;
+}
+#third .social a{
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color1);
+    font-size: 30px;
+    transition: 0s ease;
+}
+#third .social a:hover{
+    color: var(--color5);
+}
+#third .social a .fa{
+    text-align: center;
+}
 
+                                    /* Forth Section */
+
+#forth{
+    height: 100vh;
+    background-image: url(bg.jpg);
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+}
+
+                                    /* Media Quries */
 
 @media (max-width: 500px){
     #second{
@@ -320,5 +375,40 @@ html{
     #third h2::after,
     #third h2::before{
         display: none;
+    }
+    #third{
+        min-height: 1000px;
+    }
+    #third h2{
+        margin: 30px auto 20px;
+        font-size: 35px;
+    }
+    #third .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #third .photo{
+        margin: 20px auto 30px;
+        display: flex;
+        justify-content: center;
+    }
+    #third .photo img{
+        width: 80%;
+    }
+    #third .about .me{
+        text-align: justify;
+        width: 85%;
+        font-weight: lighter;
+    }
+    #third .about .me .desc p{
+        line-height: 20px;
+        font-size: 16px;
+    }
+    #third .social{
+        margin: 20px auto 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
