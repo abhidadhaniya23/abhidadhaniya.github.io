@@ -18,12 +18,25 @@
     --color2: white;
     --color3: #43464b;
     --color4: rgb(240, 240, 240);
+    --color5: rgb(30, 7, 134);
     
     
     /*--color1: rgb(10, 10, 10);
     --color2: rgb(31, 31, 31);
     --color4: rgb(10,33,53);
     --color6: rgb(5,5,5); */
+}
+svg{
+    position: absolute;
+    bottom: 0;
+}
+#svg1{
+    position: absolute;
+    top: -50px;
+}
+#svgInverse{
+    position: relative;
+    top: 0;
 }
 
 *{
@@ -74,6 +87,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 #first .heading h1{
     color: var(--color3);
@@ -90,6 +104,8 @@ html{
     font-weight: bold;
 }
 #first .heading a{
+    z-index: 10;
+    margin: 20px auto 0;
     display: flex;
     align-self: center;
     text-align: center;
@@ -100,17 +116,29 @@ html{
     text-decoration: none;
     border-radius: 3px;
     transition: 0.3s ease;
-    box-shadow: 0 20px 28px 0 rgba(82, 44, 250, 0.226);
+    box-shadow: 0 20px 28px 0 rgb(82 44 250 / 18%);
 }
+/* rgba(82, 44, 250, 0.226) */
 #first .heading a:hover{
     background: var(--color1);
     color: var(--color2);
     border: 2px solid var(--color1);
 }
+#first .heading #language{
+    margin: -20px auto 10px;
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--font1);
+    font-weight: bold;
+    color: var(--color3);
+    letter-spacing: 1.5px;
+}
 
                         /* second section  :  Skills */
 #second{
-    background: linear-gradient(180deg, var(--color1), rgb(25, 2, 129));
+    height: 70vh;
+    padding: 50px 0 50px;
+    background: linear-gradient(180deg, var(--color1), rgb(30, 7, 134));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,16 +147,37 @@ html{
 #second .main{
     padding: 10px 0 80px;
 }
-#second h2,
-#third h2,
-#forth h2,
-#fifth h2
-{
+#second h2{
+    width: 90%;
+    z-index: 10;
     margin: 30px auto;
     letter-spacing: 0.5px;
     color: var(--color2);
     font-family: var(--font1);
+    text-decoration: none;
     font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#second h2::after{
+    content: '';
+    margin: 0 20px 0;
+    position: relative;
+    width: 70%;
+    display: block;
+    background: var(--color2);
+    height: 3px;
+}
+#second h2::before{
+    content: '';
+    margin: 0 20px 0;
+    position: relative;
+    width: 70%;
+    display: block;
+    background: var(--color2);
+    height: 3px;
 }
 .main p{
     margin: 12px auto 5px;
@@ -180,11 +229,46 @@ html{
                         /* third section  :  development */
 
 #third{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: var(--color5);
+    background: var(--color4);
+    height: 90vh;
 }
+#third h2{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin: 0 auto 30px;
+    letter-spacing: 0.5px;
+    color: var(--color1);
+    font-family: var(--font1);
+    text-decoration: none;
+    font-size: 50px;
+}
+#first .fa,
+#second .fa{
+    margin: 0 10px 0 0;
+}
+#third h2::after{
+    content: "";
+    margin: 0 20px 0;
+    position: relative;
+    width: 70%;
+    display: block;
+    background: var(--color1);
+    height: 3px;
+}
+#third h2::before{
+    content: "";
+    margin: 0 20px 0;
+    position: relative;
+    width: 70%;
+    display: block;
+    background: var(--color1);
+    height: 3px;
+}
+
 
 @media (max-width: 500px){
     #second{
@@ -230,5 +314,11 @@ html{
     }
     .main p{
         font-size: 17px;
+    }
+    #second h2::after,
+    #second h2::before,
+    #third h2::after,
+    #third h2::before{
+        display: none;
     }
 }
