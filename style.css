@@ -252,7 +252,8 @@ html{
     font-size: 45px;
 }
 #third .fa,
-#second .fa{
+#second .fa,
+#third .fa{
     margin: 0 10px 0 0;
 }
 #third h2::after{
@@ -321,6 +322,35 @@ html{
     /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#forth h2{
+    width: 90%;
+    z-index: 10;
+    letter-spacing: 0.5px;
+    color: var(--color1);
+    font-family: var(--font1);
+    font-size: 45px;
+}
+#forth h2::after{
+    content: "";
+    margin: 0 20px 0;
+    position: relative;
+    width: 30%;
+    display: block;
+    background: var(--color1);
+    height: 3px;
+}
+#forth h2::before{
+    content: "";
+    margin: 0 20px 0;
+    position: relative;
+    width: 30%;
+    display: block;
+    background: var(--color1);
+    height: 3px;
 }
 
                                     /* Media Quries */
@@ -376,8 +406,11 @@ html{
     #third h2::before{
         display: none;
     }
-    #third{
-        min-height: 1000px;
+    #first,
+    #second,
+    #third,
+    #forth{
+        height: auto;
     }
     #third h2{
         margin: 30px auto 20px;
