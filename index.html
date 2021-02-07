@@ -70,7 +70,7 @@
             <div class="container">
                 <div id="css" class="skill css"></div>
             </div>
-            <p>JAVA SCRIPT 75%</p>
+            <p>JAVA SCRIPT 65%</p>
             <div class="container">
                 <div id="js" class="skill js"></div>
             </div>
@@ -145,6 +145,10 @@
             </div>
         </div>
     </section>
+
+
+
+
 
     <!-- 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -276,7 +280,7 @@
 
         Array.from(data).forEach(function (e, index) {
             projects.innerHTML += `
-            <div class="tool" onclick()="${e.hrefLocation}">
+            <div class="tool">
                 <div class="project_pic">
                     <img src=${e.img_src}>
                 </div>
@@ -285,6 +289,9 @@
                         ${index + 1}. ${e.projectName}
                     </h2>
                     <p class="desc">${e.description}</p>
+                </div>
+                <div class="link">
+                    <a href="${e.hrefLocation} target="_blank">Visit Site</a>
                 </div>
             </div>
         `;
@@ -314,6 +321,19 @@
         // };
 
 
+    </script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script>
+        if (window.innerWidth > 500) {
+            VanillaTilt.init(document.querySelectorAll(".tool"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": .5
+            });
+        }
     </script>
 
 </body>

@@ -13,8 +13,8 @@
     --font3: 'PT Sans', sans-serif;
     --font4: 'Oxygen', sans-serif;
 
-    --blur: 3px;
-    --project_width: 250px;
+    --blur: 5px;
+    --project_width: 230px;
     --project_border_radius: 10px;
 
     /* --color1: #f16334; */
@@ -232,7 +232,7 @@ html{
     width: 80%;
 }
 .js{
-    width: 75%;
+    width: 65%;
 }
 .graphic{
     width: 50%;
@@ -412,7 +412,7 @@ html{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: var(--project_width);
+    width: calc((var(--project_width)) + 50px);
     border-radius: var(--project_border_radius);
     backdrop-filter: blur(var(--blur));
     background: rgb(255 255 255 / 12%);
@@ -420,20 +420,31 @@ html{
     cursor: pointer;
 }
 #forth .content .projects .list .tool .project_pic img{
-    width: var(--project_width);
+    width: calc((var(--project_width)) + 50px);
     border-top-left-radius: var(--project_border_radius);
     border-top-right-radius: var(--project_border_radius);
     box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 16%);
 }
 #forth .content .projects .list .tool .project_name{
-    font-size: 24px;
+    font-size: 30px;
     margin: 10px auto;
 }
 #forth .content .projects .list .tool .desc{
-    padding: 0px 15px 15px;
+    padding: 0px 15px 5px;
     text-align: center;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 20px;
+}
+#forth .content .projects .list .tool .link{
+    margin: 10px auto;
+}
+#forth .content .projects .list .tool .link a{
+    padding: 5px 20px;
+    background: rgb(255 255 255 / 25%);
+    border-radius: 3px;
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 20px;
 }
 
 
@@ -458,7 +469,10 @@ html{
     }
 }
 
-@media (max-width: 670px){
+@media (max-width: 500px){
+    :root{
+        --project_width: 300px;
+    }
     .top-btn{
         bottom: 20px;
         right: 20px;
@@ -504,8 +518,14 @@ html{
     #second h2::after,
     #second h2::before,
     #third h2::after,
-    #third h2::before{
+    #third h2::before,
+    #forth .content .heading h2::after,
+    #forth .content .heading h2::before
+    {
         display: none;
+    }
+    #second{
+        padding: 40px 0 80px;
     }
     #second,
     #third,
@@ -543,5 +563,42 @@ html{
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+    #forth .content .projects .list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #forth .content .projects .list .tool{
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: var(--project_width);
+    }
+    #forth .content .projects .list .tool .project_pic img{
+        width: var(--project_width);
+        border-top-left-radius: var(--project_border_radius);
+        border-top-right-radius: var(--project_border_radius);
+        box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 16%);
+    }
+    #forth .content{
+        padding: 40px 0;
+    }
+    #forth .content .projects .list .tool .link{
+        margin: 20px auto;
+    }
+    #forth .content .projects .list .tool .desc,
+    #forth .content .projects .about p{
+        font-size: 22px;
+    }
+    #forth .content .projects .list .tool .project_name{
+        font-size: 28px;
+    }
+    #forth .content .projects .about p{
+        font-size: 22px;
     }
 }
