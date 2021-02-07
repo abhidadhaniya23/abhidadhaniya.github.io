@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Photos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>Photos Finder</h1>
+        <div class="searchTools">
+            <input type="text" id="search" placeholder="Search images...">
+            <input type="button" value="search" onclick="result()">
+        </div>
+        <p id='note'>Note: If some images are repeting or not showing then reload this window</p>
+        <div class="container">
+            <div class="loading_animation">
+                <div class="slides"></div>
+                <div class="slides"></div>
+                <div class="loadingName">
+                    <p>Loading...</p>
+                </div>
+            </div>
+            <img src="https://source.unsplash.com/collection/190727/500x300">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

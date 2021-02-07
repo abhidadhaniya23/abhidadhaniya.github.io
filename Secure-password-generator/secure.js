@@ -1,0 +1,77 @@
+
+
+/*
+there are some changes...
+("a","@")
+("O","0")
+("s",$)
+("i",!)
+("I",|)
+*/
+
+// Input user password... and that is not secure...
+function securePass() {
+    let password = document.getElementById("userPassword").value;
+
+    if (password.includes('and') == true) {
+        password = password.replace('and', '&');
+    }
+
+    // now split password in array/object...
+    password = password.split('');
+
+    // loop for replace some charctors...
+    for (let i = 0; i < password.length; i++) {
+        function myFn(oldChar, newChar) {
+            password[i] = password[i].replace(oldChar, newChar);
+        }
+
+        // without if i want to try switch statement...
+
+        if (password[i] == 'a') {
+            myFn('a', '@');
+        }
+        if (password[i] == 'o') {
+            myFn('o', '0');
+        }
+        if (password[i] == 's') {
+            myFn('s', '$');
+        }
+        if (password[i] == 'i') {
+            myFn('i', '!');
+        }
+        if (password[i] == 'I') {
+            myFn('I', '|');
+        }
+
+        // console.log('matching');
+        // console.log(password[0]);
+        // console.log(password);
+        // password;
+
+    }
+
+    // simply convert any random charctor to uppercase...
+    let anyNumber = parseInt((Math.random()) * password.length);
+    // console.log(anyNumber);
+    password[anyNumber] = password[anyNumber].toUpperCase();
+    password[anyNumber] = password[anyNumber].toUpperCase();
+    // console.log(password);
+
+    // array to string conversion...
+    password = password.toString();
+    // console.log(password);
+
+    // using for loop remove , between this string elements...
+    for (let index = 0; index < password.length; index++) {
+        password = password.replace(',', '');
+    }
+
+    // show secure password to user...  
+    document.getElementById("securePassword").innerText = "Your secure password is " + `"${password}"`;
+
+    if (password.length < 8) {
+        alert("Your password is very small, please make less than 9 latter password for make more secure...");
+    }
+}
+

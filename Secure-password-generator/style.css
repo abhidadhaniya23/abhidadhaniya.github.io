@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.78)), url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    padding: 20px;
+    font-weight: 100;
+    color: tomato;
+}
+
+.container h2 {
+    padding: 20px 0;
+    font-weight: 100;
+}
+
+.container input {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    letter-spacing: 0.3px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    letter-spacing: 0.6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container button {
+    padding: 5px;
+    font-size: 15px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background: tomato;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.container button:hover {
+    color: black;
+}
+
+.container p {
+    padding: 10px;
+    /* border: 1px solid tomato; */
+    letter-spacing: 0.4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 400px) {
+    .container input {
+        width: 80%;
+    }
+}

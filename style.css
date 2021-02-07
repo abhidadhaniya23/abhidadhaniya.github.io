@@ -12,6 +12,11 @@
     --font2: 'Lobster Two', cursive;
     --font3: 'PT Sans', sans-serif;
     --font4: 'Oxygen', sans-serif;
+
+    --blur: 3px;
+    --project_width: 250px;
+    --project_border_radius: 10px;
+
     /* --color1: #f16334; */
     /* --color1: rgb(0, 183, 255); */
     --color1: rgb(82, 44, 250);
@@ -36,7 +41,11 @@
 }
 #svgInverse{
     position: relative;
-    top: 0;
+    top: -2px;
+}
+#svg2{
+    position: relative;
+    top: -2px;
 }
 
 *{
@@ -89,10 +98,25 @@ html{
     justify-content: center;
     align-items: center;
 }
-#first .heading h1{
+/* #first .heading h1{
+} */
+#first .heading .details{
+    margin: 0 0 -10px;
+    display: flex;
+    flex-direction: row;
+}    
+#first .heading .details .first,
+#first .heading .details .second,
+#first .heading .details .third{
+    text-align: left;
+    margin: 0 10px;
+}
+#first .heading .details .first h2,
+#first .heading .details .second h2,
+#first .heading .details .third h2{
     color: var(--color3);
-    font-size: 70px;
-    font-family: var(--font4);
+    font-size: 80px;
+    font-family: var(--font1);
     font-weight: bold;
 }
 #first .heading #webDesigner{
@@ -136,8 +160,7 @@ html{
 
                         /* second section  :  Skills */
 #second{
-    height: 70vh;
-    padding: 50px 0 50px;
+    height: auto;
     background: linear-gradient(180deg, var(--color1), rgb(30, 7, 134));
     display: flex;
     justify-content: center;
@@ -150,7 +173,7 @@ html{
 #second h2{
     width: 90%;
     z-index: 10;
-    margin: 30px auto;
+    margin: 0px auto 30px;
     letter-spacing: 0.5px;
     color: var(--color2);
     font-family: var(--font1);
@@ -229,13 +252,13 @@ html{
                         /* third section  :  development */
 
 #third{
-    /* background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.397)),url(1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.397)),url(1.jpg); */
+    /* background-position: center;
+    background-size: cover; */
+    /* background-attachment: fixed; */
     background: var(--color4);
-    padding: 0px 0 100px;
-    height: 90vh;
+    height: auto;
+    padding: 0 0 40px;
 }
 #third h2{
     width: 100%;
@@ -244,16 +267,16 @@ html{
     justify-content: center;
     align-items: center;
     z-index: 10;
-    margin: -60px auto 30px;
+    margin: 0px auto 30px;
     letter-spacing: 0.5px;
     color: var(--color1);
     font-family: var(--font1);
     text-decoration: none;
     font-size: 45px;
 }
-#third .fa,
 #second .fa,
-#third .fa{
+#third .fa,
+#forth .fa{
     margin: 0 10px 0 0;
 }
 #third h2::after{
@@ -279,6 +302,7 @@ html{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    /* margin: 0 0 -50px; */
 }
 #third .photo img{
     width: 270px;
@@ -317,41 +341,103 @@ html{
                                     /* Forth Section */
 
 #forth{
-    height: 100vh;
-    background-image: url(bg.jpg);
-    /* background-attachment: fixed; */
-    background-position: center;
+    height: auto;
+    /* background-image: url(13.jpg); */
+    background: linear-gradient(180deg, rgba(82, 44, 250, 0.582), rgba(30, 7, 134, 0.342)),url(13.jpg);
+    background-attachment: fixed;
+     background-position: center;
     background-size: cover;
+}
+#forth .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#forth h2{
-    width: 90%;
+#forth .content .heading h2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
     letter-spacing: 0.5px;
-    color: var(--color1);
+    color: var(--color2);
     font-family: var(--font1);
     font-size: 45px;
 }
-#forth h2::after{
+#forth .content .heading h2::after{
     content: "";
     margin: 0 20px 0;
     position: relative;
     width: 30%;
     display: block;
-    background: var(--color1);
+    background: var(--color2);
     height: 3px;
 }
-#forth h2::before{
+#forth .content .heading h2::before{
     content: "";
     margin: 0 20px 0;
     position: relative;
     width: 30%;
     display: block;
-    background: var(--color1);
+    background: var(--color2);
     height: 3px;
 }
+#forth .content .projects .about{
+    display: flex;
+    justify-content: center;
+    /* background: #ffffff30; */
+    background: rgb(255,255,255,0.1);
+    padding: 10px;
+    width: 90%;
+    margin: 30px auto;
+    box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 16%);
+    backdrop-filter: blur(var(--blur));
+}
+#forth .content .projects .about p{
+    text-align: center;
+    font-size: 25px;
+    color: var(--color2);
+}
+#forth .content .projects .list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#forth .content .projects .list .tool{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: var(--project_width);
+    border-radius: var(--project_border_radius);
+    backdrop-filter: blur(var(--blur));
+    background: rgb(255 255 255 / 12%);
+    color: var(--color2);
+    cursor: pointer;
+}
+#forth .content .projects .list .tool .project_pic img{
+    width: var(--project_width);
+    border-top-left-radius: var(--project_border_radius);
+    border-top-right-radius: var(--project_border_radius);
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 16%);
+}
+#forth .content .projects .list .tool .project_name{
+    font-size: 24px;
+    margin: 10px auto;
+}
+#forth .content .projects .list .tool .desc{
+    padding: 0px 15px 15px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+
+
 
                                     /* Media Quries */
 
@@ -380,9 +466,21 @@ html{
     .top-btn a{
         padding: 9px 12px;
     }
-    #first .heading h1{
+    #first .heading .details{
+        margin: 0 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    #first .heading .details .first h2,
+    #first .heading .details .second h2,
+    #first .heading .details .third h2{
         font-size: 60px;
-        text-align: center;
+    }    
+    #first .heading .details .first,
+    #first .heading .details .second,
+    #first .heading .details .third{
+        text-align: left;
+        margin: -10px auto;
     }
     #first .heading #webDesigner{
         font-size: 25px;
@@ -392,7 +490,7 @@ html{
     }
     #second h2,
     #third h2,
-    #forth h2,
+    #forth .content .heading h2,
     #fifth h2
     {
         font-size: 40px;
@@ -400,13 +498,15 @@ html{
     .main p{
         font-size: 17px;
     }
+    #second{
+        padding: 100px 0 50px;        
+    }
     #second h2::after,
     #second h2::before,
     #third h2::after,
     #third h2::before{
         display: none;
     }
-    #first,
     #second,
     #third,
     #forth{
