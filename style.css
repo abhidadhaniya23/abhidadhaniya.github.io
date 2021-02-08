@@ -132,7 +132,7 @@ html{
     padding: 5px 30px;
     color: var(--color1);
     font-size: 25px;
-    border: 2px solid var(--color1);
+    border: 2px solid var(--color3);
     text-decoration: none;
     border-radius: 3px;
     transition: 0.3s ease;
@@ -465,7 +465,7 @@ html{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     :root{
         --project_width: 85%;
     }
@@ -483,7 +483,7 @@ html{
         height: auto;
     }
     #first .content{
-        padding: 70px 0;
+        padding: 90px 0;
     }
     #first .heading .details{
         margin: 0 0 15px;
