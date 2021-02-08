@@ -31,24 +31,27 @@
 
     <section id="first">
 
-        <div class="heading">
-            <div class="details">
-                <div class="first">
-                    <h2>Hi,</h2>
+        <div class="content">
+
+            <div class="heading">
+                <div class="details">
+                    <div class="first">
+                        <h2>Hi,</h2>
+                    </div>
+                    <div class="second">
+                        <h2>I am</h2>
+                    </div>
+                    <div class="third">
+                        <h2>Abhi.</h2>
+                    </div>
                 </div>
-                <div class="second">
-                    <h2>I am</h2>
-                </div>
-                <div class="third">
-                    <h2>Abhi.</h2>
-                </div>
+                <!-- <h1 id="name">Hi, I am Abhi.</h1> -->
+                <!-- <p id="webDesigner">&#10084; Web Designer</p> -->
+                <p id="webDesigner">~ Front End Web-Developer</p>
+                <p id="language">HTML / CSS / JAVASCRIPT</p>
+                <!-- <p id="desc">My Description</p> -->
+                <a href="#">Contact Me</a>
             </div>
-            <!-- <h1 id="name">Hi, I am Abhi.</h1> -->
-            <!-- <p id="webDesigner">&#10084; Web Designer</p> -->
-            <p id="webDesigner">~ Front End Web-Developer</p>
-            <p id="language">HTML / CSS / JAVASCRIPT</p>
-            <!-- <p id="desc">My Description</p> -->
-            <a href="#">Contact Me</a>
         </div>
 
         <svg id="svg_first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -280,21 +283,21 @@
 
         Array.from(data).forEach(function (e, index) {
             projects.innerHTML += `
-            <div class="tool">
-                <div class="project_pic">
-                    <img src=${e.img_src}>
+                <div class="tool">
+                    <div class="project_pic">
+                        <img src=${e.img_src}>
+                    </div>
+                    <div class="details">
+                        <h2 class="project_name">
+                            ${index + 1}. ${e.projectName}
+                        </h2>
+                        <p class="desc">${e.description}</p>
+                    </div>
+                    <div class="link">
+                        <a target='_blank' href="${e.hrefLocation}">Visit Site</a>
+                    </div>
                 </div>
-                <div class="details">
-                    <h2 class="project_name">
-                        ${index + 1}. ${e.projectName}
-                    </h2>
-                    <p class="desc">${e.description}</p>
-                </div>
-                <div class="link">
-                    <a target='_blank' href="${e.hrefLocation}">Visit Site</a>
-                </div>
-            </div>
-        `;
+            `;
         });
 
         // <div class="saperate-project">
