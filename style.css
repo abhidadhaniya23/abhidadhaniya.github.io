@@ -55,33 +55,8 @@
     font-family: var(--font1);
     /* transition: 0.6s ease; */
 }
-.top-btn{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: 0.5s ease;
-    opacity: 0;
-    z-index: 100;
-    cursor: pointer;
-}
-.top-btn .fa{
-    font-size: 22px;
-    color: whitesmoke;
-    border: none;
-    padding: 7px 10px;
-    border-radius: 50px;
-    background: var(--color1);
-}
 html{
     scroll-behavior: smooth;
-}
-.top-btn{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: 0.5s ease;
-    opacity: 0;
-    z-index: 100;
 }
 
                             /* First section  :  Header */
@@ -461,6 +436,7 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: whitesmoke;
 }
 /* #fifth h2{
     margin: 20px auto;
@@ -567,6 +543,139 @@ html{
 }
 */
 
+                                    /* loading animation */
+
+                                    
+.loading-animation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: whitesmoke;
+    z-index: 1000000000;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven{
+    margin: 0 2px;
+    width: 5px;
+    height: 50px;
+    /* padding: 40px 5px; */
+    background: crimson;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    /* animation-delay: ; */
+}
+.one{
+    animation-name: one;
+    animation-delay: .2s;
+}
+@keyframes one{
+    0%{
+        width: 5px;
+        height: 50px;
+    }
+    100%{
+        width: 5px;
+        height: 10px;
+    }
+}
+.two{
+    animation-name: two;
+    animation-delay: .4s;
+}
+@keyframes two{
+    0%{
+        width: 5px;
+        height: 50px;
+    }
+    100%{
+        width: 5px;
+        height: 10px;
+    }
+}
+.three{
+    animation-name: three;
+    animation-delay: .6s;
+}
+@keyframes three{
+    0%{
+        width: 5px;
+        height: 50px;
+    }
+    100%{
+        width: 5px;
+        height: 10px;
+    }
+}
+.four{
+    animation-name: four;
+    animation-delay: .8s;
+}
+@keyframes four{
+    0%{
+        width: 5px;
+        height: 50px;
+    }
+    100%{
+        width: 5px;
+        height: 10px;
+    }
+}
+.five{
+    animation-name: five;
+    animation-delay: 1s;
+}
+@keyframes five{
+    0%{
+        width: 5px;
+        height: 50px;
+    }
+    100%{
+        width: 5px;
+        height: 10px;
+    }
+}
+.six{
+    animation-name: six;
+    animation-delay: 1.2s;
+}
+@keyframes six{
+    0%{
+        width: 5px;
+        height: 50px;
+    }
+    100%{
+        width: 5px;
+        height: 10px;
+    }
+}
+.seven{
+    animation-name: seven;
+    animation-delay: 1.4s;
+}
+@keyframes seven{
+    0%{
+        width: 5px;
+        height: 50px;
+    }
+    100%{
+        width: 5px;
+        height: 10px;
+    }
+}
+
 
 
                                     /* Media Quries */
@@ -606,7 +715,7 @@ html{
         height: auto;
     }
     #first .content{
-        padding: 100px 0;
+        padding: 140px 0;
     }
     #first .heading .details{
         margin: 0 0 15px;
@@ -625,6 +734,7 @@ html{
         margin: -10px auto;
     }
     #first .heading #webDesigner{
+        text-align: center;
         font-size: 25px;
     }
     #first .heading a{
