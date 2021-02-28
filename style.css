@@ -587,8 +587,8 @@ html{
     #third h2::before,
     #forth .content .heading h2::after,
     #forth .content .heading h2::before,
-    #fifth .h2::after,
-    #fifth .h2::before
+    #fifth h2::after,
+    #fifth h2::before
     {
         display: none;
     }
@@ -657,15 +657,25 @@ html{
     #forth .content{
         padding: 40px 0;
     }
+    #forth .content .projects .list .tool .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     #forth .content .projects .list .tool .link{
         margin: 20px auto;
     }
     #forth .content .projects .list .tool .desc,
     #forth .content .projects .about p{
-        font-size: 22px;
+        font-size: 20px;
     }
     #forth .content .projects .list .tool .project_name{
-        font-size: 28px;
+        font-size: 24px;
+    }
+    #forth .content .projects .list .tool .link a {
+        margin: 5px auto;
+        font-size: 17px;
     }
     #forth .content .projects .about p{
         font-size: 22px;
