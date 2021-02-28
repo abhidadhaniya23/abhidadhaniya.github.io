@@ -226,6 +226,7 @@ html{
     padding: 5px 10px;
     font-weight: bold;
     background:  var(--color4);
+    transition: 1.7s ease;
 }
 .html{
     width: 90%;
@@ -634,7 +635,7 @@ html{
     #forth .content .heading h2,
     #fifth h2
     {
-        font-size: 40px;
+        font-size: 38px;
     }
     .main p{
         font-size: 17px;
@@ -740,5 +741,35 @@ html{
     }
     #forth .content .projects .about p{
         font-size: 22px;
+    }
+
+    #fifth .email .fa,
+    #fifth .contact .fa
+    {
+        margin: 0 15px;
+        font-size: 20px;
+        color: var(--color4);
+    }
+    #fifth .email,
+    #fifth .contact
+    {
+        padding: 10px 20px;
+        background: var(--color1);
+        cursor: pointer;
+    }
+    #fifth .email a,
+    #fifth .contact a
+    {
+        text-decoration: none;
+        font-size: 24px;
+        color: var(--color4);
+    }
+    .footer{
+        margin-top: -40px;
+        text-align: center;
+        padding: 18px;
+        font-size: 25px;
+        color: var(--color2);
+        background: var(--color1);
     }
 }
