@@ -57,14 +57,15 @@
     transition: 0.5s ease;
     opacity: 0;
     z-index: 100;
+    cursor: pointer;
 }
-.top-btn a{
+.top-btn .fa{
     font-size: 22px;
     color: whitesmoke;
     border: none;
     padding: 7px 10px;
-    border-radius: 3px;
-    background: var(--color3);
+    border-radius: 50px;
+    background: var(--color1);
 }
 html{
     scroll-behavior: smooth;
@@ -132,7 +133,7 @@ html{
     padding: 5px 30px;
     color: var(--color1);
     font-size: 25px;
-    border: 2px solid var(--color3);
+    border: 2px solid var(--color1);
     text-decoration: none;
     border-radius: 3px;
     transition: 0.3s ease;
@@ -348,6 +349,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px 0 60px;
 }
 #forth .content .heading h2{
     width: 100%;
@@ -442,7 +444,26 @@ html{
     text-decoration: none;
     font-size: 20px;
 }
-
+#fifth{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#fifth h2{
+    margin: 20px auto;
+    font-size: 45px;
+} 
+/* this is only for contact input forms */
+/* #fifth form input[type='text'],
+#fifth form input[type='password']{
+    margin: 5px auto;
+    border-bottom: 1px solid var(--color1);
+    width: 400px;
+    padding: 10px;
+}
+*/
 
 
 
@@ -483,7 +504,7 @@ html{
         height: auto;
     }
     #first .content{
-        padding: 90px 0;
+        padding: 100px 0;
     }
     #first .heading .details{
         margin: 0 0 15px;
