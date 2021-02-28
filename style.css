@@ -415,7 +415,7 @@ html{
     backdrop-filter: blur(var(--blur));
     background: rgb(255 255 255 / 12%);
     color: var(--color2);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 #forth .content .projects .list .tool .project_pic img{
     width: calc((var(--project_width)) + 50px);
@@ -451,10 +451,50 @@ html{
     justify-content: center;
     align-items: center;
 }
-#fifth h2{
+/* #fifth h2{
     margin: 20px auto;
     font-size: 45px;
-} 
+} */
+#fifth h2{
+    width: 90%;
+    z-index: 10;
+    margin: 0px auto 30px;
+    letter-spacing: 0.5px;
+    color: var(--color1);
+    font-family: var(--font1);
+    text-decoration: none;
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#fifth h2::after{
+    content: '';
+    margin: 0 20px 0;
+    position: relative;
+    width: 30%;
+    display: block;
+    background: var(--color1);
+    height: 3px;
+}
+#fifth h2::before{
+    content: '';
+    margin: 0 20px 0;
+    position: relative;
+    width: 30%;
+    display: block;
+    background: var(--color1);
+    height: 3px;
+}
+#fifth .details .name p{
+    font-size: 20px;
+}
+/* #fifth .details .email,
+#fifth .details .contact, */
+
+
+
 /* this is only for contact input forms */
 /* #fifth form input[type='text'],
 #fifth form input[type='password']{
@@ -546,7 +586,9 @@ html{
     #third h2::after,
     #third h2::before,
     #forth .content .heading h2::after,
-    #forth .content .heading h2::before
+    #forth .content .heading h2::before,
+    #fifth .h2::after,
+    #fifth .h2::before
     {
         display: none;
     }
