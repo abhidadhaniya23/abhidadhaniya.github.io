@@ -1,10 +1,13 @@
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
     color: whitesmoke;
     text-align: center;
 }
-body{
+.content{
     background: black;
+    padding: 50px 0;
 }
 h1{
     font-family: 'Dancing Script', cursive;
@@ -64,10 +67,11 @@ h1{
 
 
 footer{
+    position: relative;
     padding: 15px;
     color: gold;
     /* background: rgb(12, 12, 12); */
-    background: #1f1f1f;
+    background: #101010;
 }
 @media (max-width:400px){
     *{
@@ -78,10 +82,12 @@ footer{
         margin: 20px auto;
         font-size: 2rem;
     }
-    footer{
-        margin: 20px auto 0;
-    }
     #showTxt{
         font-size: 1.7rem;
+    }
+    .content{
+        background: black;
+        padding: 50px 0;
+        height: auto;
     }
 }

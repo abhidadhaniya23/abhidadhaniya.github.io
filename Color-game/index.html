@@ -22,40 +22,43 @@
     <audio src="lose.mp3" id="lose"></audio>
     <audio src="full-game-win.mp3" id="gameWin"></audio> -->
 
-    <h1>Color Game</h1>
+    <section class="content">
 
-    <p id="showTxt"></p>
+        <h1>Color Game</h1>
 
-    <div class="container">
-        <p class="colors" onclick="blue()">blue</p>
-        <p class="colors" onclick="white()">white</p>
-        <p class="colors" onclick="yellow()">yellow</p>
-        <br>
-        <p class="colors" onclick="green()">green</p>
-        <p class="colors" onclick="red()">red</p>
-        <p class="colors" onclick="pink()">pink</p>
-        <p class="colors" onclick="purple()">purple</p>
-    </div>
+        <p id="showTxt"></p>
 
-    <div class="score">
-        <p>Your Score</p>
-        <div class="result">
-            <p id="win">Win</p>
-            <p id="loss">Loss</p>
+        <div class="container">
+            <p class="colors" onclick="blue()">blue</p>
+            <p class="colors" onclick="white()">white</p>
+            <p class="colors" onclick="yellow()">yellow</p>
             <br>
+            <p class="colors" onclick="green()">green</p>
+            <p class="colors" onclick="red()">red</p>
+            <p class="colors" onclick="pink()">pink</p>
+            <p class="colors" onclick="purple()">purple</p>
         </div>
-        <div class="result_score">
-            <p id="winScore">0</p>
-            <p id="lossScore">0</p>
-        </div>
-        <p id="highestScore"></p>
-    </div>
 
-    <div class="notes">
-        <p>Hint : Page refresh to restart the game!</p>
-        <br>
-        <p id="howToPlay"></p>
-    </div>
+        <div class="score">
+            <p>Your Score</p>
+            <div class="result">
+                <p id="win">Win</p>
+                <p id="loss">Loss</p>
+                <br>
+            </div>
+            <div class="result_score">
+                <p id="winScore">0</p>
+                <p id="lossScore">0</p>
+            </div>
+            <p id="highestScore"></p>
+        </div>
+
+        <div class="notes">
+            <br>
+            <p id="howToPlay"></p>
+        </div>
+
+    </section>
     <footer>Copyright &#169; || Made by Abhi Dadhaniya...</footer>
 
     <script src="index.js"></script>

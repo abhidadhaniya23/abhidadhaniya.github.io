@@ -110,9 +110,9 @@ function purple() {
 document.getElementById('howToPlay').innerHTML =
     `How to play?
     <br>
-    Note:Refresh this page before you read this hint...
+    1. Refresh this page before you read this hint...
     <br>
-    Now, the text is ${document.getElementById('showTxt').innerText} but text color is ${myColor2} then you choose ${myColor2} word from above buttons...`
+    2. Now, the text is ${document.getElementById('showTxt').innerText} but text color is ${myColor2} then you choose ${myColor2} word from above buttons...`
 
 
 // now this is the important part form me !

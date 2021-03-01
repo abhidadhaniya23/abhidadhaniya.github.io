@@ -28,14 +28,21 @@ function securePass() {
 
         // without if i want to try switch statement...
 
-        if (password[i] == 'a') {
+        if (password[i] == 'a' || password[i] == 'A') {
             myFn('a', '@');
+            myFn('A', '@');
         }
-        if (password[i] == 'o') {
+        if (password[i] == 'o' || password[i] == 'O') {
             myFn('o', '0');
+            myFn('O', '0');
         }
-        if (password[i] == 's') {
+        if (password[i] == 's' || password[i] == 'S') {
             myFn('s', '$');
+            myFn('S', '$');
+        }
+        if (password[i] == 'v' || password[i] == 'V') {
+            myFn('v', '^');
+            myFn('V', '^');
         }
         if (password[i] == 'i') {
             myFn('i', '!');

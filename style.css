@@ -58,6 +58,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    overflow: hidden;
+}
 
                             /* First section  :  Header */
 
@@ -126,7 +129,7 @@ html{
     border: 2px solid var(--color1);
 }
 #first .heading #language{
-    margin: -20px auto 10px;
+    margin: -15px auto 10px;
     text-align: center;
     font-size: 18px;
     font-family: var(--font1);
@@ -152,7 +155,7 @@ html{
     z-index: 10;
     margin: 0px auto 30px;
     letter-spacing: 0.5px;
-    color: var(--color2);
+    color: white;
     font-family: var(--font1);
     text-decoration: none;
     font-size: 50px;
@@ -340,7 +343,7 @@ html{
     align-items: center;
     z-index: 10;
     letter-spacing: 0.5px;
-    color: var(--color2);
+    color: white;
     font-family: var(--font1);
     font-size: 45px;
 }
@@ -558,6 +561,7 @@ html{
     width: 100%;
     background: whitesmoke;
     z-index: 1000000000;
+    overflow-y: hidden;
 }
 .one,
 .two,
