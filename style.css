@@ -254,6 +254,7 @@ body{
     font-family: var(--font1);
     text-decoration: none;
     font-size: 45px;
+    text-align: center;
 }
 #second .fa,
 #third .fa,
@@ -459,6 +460,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 #fifth h2::after{
     content: '';
@@ -523,6 +525,9 @@ body{
     text-decoration: none;
     font-size: 24px;
     color: var(--color4);
+}
+#fifth .details #my-email{
+    display: none;
 }
 .footer{
     margin-top: -40px;

@@ -153,11 +153,12 @@
         <h2><i class="fa fa-user" aria-hidden="true"></i> &nbsp;Contact via</h2>
 
         <div class="details">
-            <div class="email">
+            <div onclick="showemail()" class="email">
                 <a href="mailto:abhidadhaniya23@gmail.com">
                     <i class="fa fa-envelope"></i>E-mail
                 </a>
             </div>
+            <p id="my-email">Email : abhidadhaniya23@gmail.com</p>
             <div class="contact">
                 <a href="tel:+919427425818">
                     <i class="fa fa-phone"></i>Call
@@ -218,7 +219,15 @@
     </script>
 
     <script>
-        console.log('done');
+        // console.log('done');
+
+        function showemail() {
+            if (innerWidth > 500) {
+                let email = document.getElementById('my-email');
+                email.style.display = 'block';
+            }
+        }
+
 
         let logo = document.getElementById('logo');
         let ul = document.getElementById('ul');
