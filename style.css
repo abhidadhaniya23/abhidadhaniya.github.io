@@ -22,6 +22,12 @@
     --project_width: 250px;
     --project_border_radius: 10px;
 
+    --x1: 10px;
+    --y1: 100px;
+    
+    --x2: 10px;
+    --y2: 20px;
+    
     /* --color1: #f16334; */
     /* --color1: rgb(0, 183, 255); */
     --color1: rgb(82, 44, 250);
@@ -577,8 +583,8 @@ body{
 .six,
 .seven{
     margin: 0 2px;
-    width: 5px;
-    height: 50px;
+    width:var(--x1);
+    height: var(--y1);
     /* padding: 40px 5px; */
     background: crimson;
     animation-duration: .7s;
@@ -593,12 +599,12 @@ body{
 }
 @keyframes one{
     0%{
-        width: 5px;
-        height: 50px;
+        width:var(--x1);
+        height: var(--y1);
     }
     100%{
-        width: 5px;
-        height: 10px;
+        width: var(--x2);
+        height: var(--y2);
     }
 }
 .two{
@@ -607,12 +613,12 @@ body{
 }
 @keyframes two{
     0%{
-        width: 5px;
-        height: 50px;
+        width:var(--x1);
+        height: var(--y1);
     }
     100%{
-        width: 5px;
-        height: 10px;
+        width: var(--x2);
+        height: var(--y2);
     }
 }
 .three{
@@ -621,12 +627,12 @@ body{
 }
 @keyframes three{
     0%{
-        width: 5px;
-        height: 50px;
+        width:var(--x1);
+        height: var(--y1);
     }
     100%{
-        width: 5px;
-        height: 10px;
+        width: var(--x2);
+        height: var(--y2);
     }
 }
 .four{
@@ -635,12 +641,12 @@ body{
 }
 @keyframes four{
     0%{
-        width: 5px;
-        height: 50px;
+        width:var(--x1);
+        height: var(--y1);
     }
     100%{
-        width: 5px;
-        height: 10px;
+        width: var(--x2);
+        height: var(--y2);
     }
 }
 .five{
@@ -649,12 +655,12 @@ body{
 }
 @keyframes five{
     0%{
-        width: 5px;
-        height: 50px;
+        width:var(--x1);
+        height: var(--y1);
     }
     100%{
-        width: 5px;
-        height: 10px;
+        width: var(--x2);
+        height: var(--y2);
     }
 }
 .six{
@@ -663,12 +669,12 @@ body{
 }
 @keyframes six{
     0%{
-        width: 5px;
-        height: 50px;
+        width:var(--x1);
+        height: var(--y1);
     }
     100%{
-        width: 5px;
-        height: 10px;
+        width: var(--x2);
+        height: var(--y2);
     }
 }
 .seven{
@@ -677,12 +683,12 @@ body{
 }
 @keyframes seven{
     0%{
-        width: 5px;
-        height: 50px;
+        width:var(--x1);
+        height: var(--y1);
     }
     100%{
-        width: 5px;
-        height: 10px;
+        width: var(--x2);
+        height: var(--y2);
     }
 }
 
@@ -798,6 +804,7 @@ body{
     }
     #third .photo img{
         width: 80%;
+        height: auto;
     }
     #third .about .me{
         text-align: justify;
