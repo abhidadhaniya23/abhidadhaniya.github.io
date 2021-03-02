@@ -21,7 +21,7 @@ function scoreBoard() {
     }
 }
 
-// made this function for user choos right answere or not !
+// made this function for user choose right answere or not !
 function myResult() {
     if (userColor == myColor2) {
         winScore += 1;
@@ -110,9 +110,10 @@ function purple() {
 document.getElementById('howToPlay').innerHTML =
     `How to play?
     <br>
-    1. Refresh this page before you read this hint...
     <br>
-    2. Now, the text is ${document.getElementById('showTxt').innerText} but text color is ${myColor2} then you choose ${myColor2} word from above buttons...`
+    1. Refresh this page...
+    <br>
+    2. The text is ${document.getElementById('showTxt').innerText} but text color is ${myColor2} then you choose ${myColor2} word from above buttons...`
 
 
 // now this is the important part form me !

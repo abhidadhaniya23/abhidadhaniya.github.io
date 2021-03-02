@@ -51,23 +51,16 @@ function securePass() {
             myFn('I', '|');
         }
 
-        // console.log('matching');
-        // console.log(password[0]);
-        // console.log(password);
-        // password;
-
     }
 
     // simply convert any random charctor to uppercase...
     let anyNumber = parseInt((Math.random()) * password.length);
-    // console.log(anyNumber);
+
     password[anyNumber] = password[anyNumber].toUpperCase();
     password[anyNumber] = password[anyNumber].toUpperCase();
-    // console.log(password);
 
     // array to string conversion...
     password = password.toString();
-    // console.log(password);
 
     // using for loop remove , between this string elements...
     for (let index = 0; index < password.length; index++) {

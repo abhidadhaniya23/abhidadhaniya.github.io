@@ -6574,7 +6574,6 @@ let json = [
 ];
 
 
-
 function changeQuotes() {
     let myRandomNum = parseInt(Math.random() * json.length);
 
