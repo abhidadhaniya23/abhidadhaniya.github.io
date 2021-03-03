@@ -804,7 +804,7 @@ body{
     }
     #third .photo img{
         width: 80%;
-        height: auto;
+        height: calc(270px*80%);
     }
     #third .about .me{
         text-align: justify;
