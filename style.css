@@ -802,10 +802,6 @@ body{
         display: flex;
         justify-content: center;
     }
-    #third .photo img{
-        width: 80%;
-        height: calc(270px*80%);
-    }
     #third .about .me{
         text-align: justify;
         width: 85%;
