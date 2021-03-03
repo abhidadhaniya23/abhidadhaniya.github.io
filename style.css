@@ -22,10 +22,10 @@
     --project_width: 250px;
     --project_border_radius: 10px;
 
-    --x1: 10px;
+    --x1: 7px;
     --y1: 100px;
     
-    --x2: 10px;
+    --x2: 7px;
     --y2: 20px;
     
     /* --color1: #f16334; */
@@ -126,7 +126,7 @@ body{
     text-decoration: none;
     border-radius: 3px;
     transition: 0.3s ease;
-    box-shadow: 0 20px 28px 0 rgb(82 44 250 / 18%);
+    box-shadow: 0 20px 28px 0 rgb(82 44 250 / 15%);
 }
 /* rgba(82, 44, 250, 0.226) */
 #first .heading a:hover{
@@ -747,7 +747,7 @@ body{
     #first .heading .details .second,
     #first .heading .details .third{
         text-align: left;
-        margin: -10px auto;
+        margin: -5px auto;
     }
     #first .heading #webDesigner{
         text-align: center;
