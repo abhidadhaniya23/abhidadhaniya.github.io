@@ -532,9 +532,12 @@ body{
     font-size: 24px;
     color: var(--color4);
 }
-#fifth .details #my-email{
+#fifth .details #my-email,
+#fifth .details #my-contact{
+    text-align: center;
     display: none;
 }
+
 .footer{
     margin-top: -40px;
     text-align: center;

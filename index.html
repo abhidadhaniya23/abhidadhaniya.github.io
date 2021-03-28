@@ -170,11 +170,12 @@
                 </a>
             </div>
             <p id="my-email">Email : abhidadhaniya23@gmail.com</p>
-            <div class="contact">
+            <div onclick="showcall()" class="contact">
                 <a href="tel:+919427425818">
                     <i class="fa fa-phone"></i>Call
                 </a>
             </div>
+            <p id="my-contact">Call : +919427425818</p>
             <div class="social">
                 <a href="https://www.instagram.com/_abhi_dadhaniya_/" target="_blank"><i class="fa fa-instagram"
                         aria-hidden="true"></i></a>
@@ -239,6 +240,15 @@
             }
             else {
                 email.style.display = 'none';
+            }
+        }
+        function showcall() {
+            if (innerWidth > 500) {
+                let contact = document.getElementById('my-contact');
+                contact.style.display = 'block';
+            }
+            else {
+                contact.style.display = 'none';
             }
         }
 
