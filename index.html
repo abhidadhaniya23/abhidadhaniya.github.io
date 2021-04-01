@@ -33,15 +33,87 @@
     </script>
 
 
-    <div class="loading-animation">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-        <div class="four"></div>
-        <div class="five"></div>
-        <div class="six"></div>
-        <div class="seven"></div>
-    </div>
+    
+  <style>
+    html, body {
+    /* background: rgb(82, 44, 250); */
+    /* background: #FF0048; */
+    background: #141e30;
+}
+ svg {
+   overflow: visible;
+   width: 100px;
+   height: 150px;
+}
+ svg g {
+   animation: slide 2s linear infinite;
+}
+ svg g:nth-child(2) {
+   animation-delay: 0.5s;
+}
+ svg g:nth-child(2) path {
+   animation-delay: 0.5s;
+   stroke-dasharray: 0px 158px;
+   stroke-dashoffset: 1px;
+}
+ svg path {
+   stroke: url(#gradient);
+   stroke-width: 20px;
+   stroke-linecap: round;
+   fill: none;
+   stroke-dasharray: 0 157px;
+   stroke-dashoffset: 0;
+   animation: escalade 2s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+}
+ @keyframes slide {
+   0% {
+     transform: translateY(-50px);
+  }
+   100% {
+     transform: translateY(50px);
+  }
+}
+ @keyframes escalade {
+   0% {
+     stroke-dasharray: 0 157px;
+     stroke-dashoffset: 0;
+  }
+   50% {
+     stroke-dasharray: 156px 157px;
+     stroke-dashoffset: 0;
+  }
+   100% {
+     stroke-dasharray: 156px 157px;
+     stroke-dashoffset: -156px;
+  }
+}
+ 
+  </style>
+
+<div class="loading-animation">
+<svg>
+  <g>
+    <path d="M 50,100 A 1,1 0 0 1 50,0"/>
+  </g>
+  <g>
+    <path d="M 50,75 A 1,1 0 0 0 50,-25"/>
+  </g>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ed4264;stop-opacity:1" />
+      <!-- #ed4264  #ffedbc-->
+      <!-- #141e30 -->
+      <!-- #141e30 bg and cyan yellow -->
+      <!-- #02aab0 → #00cdac -->
+      <!-- #ffd89b → #19547b -->
+      <!-- #4ca1af → #c4e0e5 -->
+      <!-- #36d1dc → #5b86e5 -->
+      <!-- #eecda3 → #ef629f -->
+      <stop offset="100%" style="stop-color:#ffedbc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
+</div>
 
     <section id="first">
 

@@ -563,136 +563,52 @@ body{
 
                                     /* loading animation */
 
-                                    
-.loading-animation{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background: whitesmoke;
-    z-index: 1000000000;
-    overflow-y: hidden;
+ svg {
+   overflow: visible;
+   width: 100px;
+   height: 150px;
 }
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven{
-    margin: 0 2px;
-    width:var(--x1);
-    height: var(--y1);
-    /* padding: 40px 5px; */
-    background: crimson;
-    animation-duration: .7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-direction: alternate;
-    /* animation-delay: ; */
+ svg g {
+   animation: slide 2s linear infinite;
 }
-.one{
-    animation-name: one;
-    animation-delay: .2s;
+ svg g:nth-child(2) {
+   animation-delay: 0.5s;
 }
-@keyframes one{
-    0%{
-        width:var(--x1);
-        height: var(--y1);
-    }
-    100%{
-        width: var(--x2);
-        height: var(--y2);
-    }
+ svg g:nth-child(2) path {
+   animation-delay: 0.5s;
+   stroke-dasharray: 0px 158px;
+   stroke-dashoffset: 1px;
 }
-.two{
-    animation-name: two;
-    animation-delay: .4s;
+ svg path {
+   stroke: url(#gradient);
+   stroke-width: 20px;
+   stroke-linecap: round;
+   fill: none;
+   stroke-dasharray: 0 157px;
+   stroke-dashoffset: 0;
+   animation: escalade 2s cubic-bezier(0.8, 0, 0.2, 1) infinite;
 }
-@keyframes two{
-    0%{
-        width:var(--x1);
-        height: var(--y1);
-    }
-    100%{
-        width: var(--x2);
-        height: var(--y2);
-    }
+ @keyframes slide {
+   0% {
+     transform: translateY(-50px);
+  }
+   100% {
+     transform: translateY(50px);
+  }
 }
-.three{
-    animation-name: three;
-    animation-delay: .6s;
-}
-@keyframes three{
-    0%{
-        width:var(--x1);
-        height: var(--y1);
-    }
-    100%{
-        width: var(--x2);
-        height: var(--y2);
-    }
-}
-.four{
-    animation-name: four;
-    animation-delay: .8s;
-}
-@keyframes four{
-    0%{
-        width:var(--x1);
-        height: var(--y1);
-    }
-    100%{
-        width: var(--x2);
-        height: var(--y2);
-    }
-}
-.five{
-    animation-name: five;
-    animation-delay: 1s;
-}
-@keyframes five{
-    0%{
-        width:var(--x1);
-        height: var(--y1);
-    }
-    100%{
-        width: var(--x2);
-        height: var(--y2);
-    }
-}
-.six{
-    animation-name: six;
-    animation-delay: 1.2s;
-}
-@keyframes six{
-    0%{
-        width:var(--x1);
-        height: var(--y1);
-    }
-    100%{
-        width: var(--x2);
-        height: var(--y2);
-    }
-}
-.seven{
-    animation-name: seven;
-    animation-delay: 1.4s;
-}
-@keyframes seven{
-    0%{
-        width:var(--x1);
-        height: var(--y1);
-    }
-    100%{
-        width: var(--x2);
-        height: var(--y2);
-    }
+ @keyframes escalade {
+   0% {
+     stroke-dasharray: 0 157px;
+     stroke-dashoffset: 0;
+  }
+   50% {
+     stroke-dasharray: 156px 157px;
+     stroke-dashoffset: 0;
+  }
+   100% {
+     stroke-dasharray: 156px 157px;
+     stroke-dashoffset: -156px;
+  }
 }
 
 
