@@ -562,24 +562,37 @@ body{
 */
 
                                     /* loading animation */
-
- svg {
+.loading-animation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #141e30;
+    z-index: 1000000000;
+    overflow-y: hidden;
+}
+.loading-animation svg {
    overflow: visible;
    width: 100px;
    height: 150px;
 }
- svg g {
+.loading-animation svg g {
    animation: slide 2s linear infinite;
 }
- svg g:nth-child(2) {
+.loading-animation svg g:nth-child(2) {
    animation-delay: 0.5s;
 }
- svg g:nth-child(2) path {
+.loading-animation svg g:nth-child(2) path {
    animation-delay: 0.5s;
    stroke-dasharray: 0px 158px;
    stroke-dashoffset: 1px;
 }
- svg path {
+.loading-animation svg path {
    stroke: url(#gradient);
    stroke-width: 20px;
    stroke-linecap: round;
