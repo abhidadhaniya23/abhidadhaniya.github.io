@@ -13,14 +13,15 @@
 <body>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FK0DTMXR9"></script>
+    <!-- I dont want to use this new tracking system analytics... -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FK0DTMXR9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-6FK0DTMXR9');
-    </script>
+    </script> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190968825-1"></script>
@@ -31,8 +32,6 @@
 
         gtag('config', 'UA-190968825-1');
     </script>
-
-
 
 <div class="loading-animation">
         <div class="loader">
@@ -192,25 +191,6 @@
             </div>
         </div>
 
-        <!-- contact form -->
-        <!-- <form>
-            <div class="inputBox">
-                <input type="text" name="" required="" placeholder="Enter Your Name">
-            </div>
-
-            <div class="inputBox">
-                <input type="text" name="" required="" placeholder="Enter Your Email Address">
-            </div>
-            
-            <div class="inputBox">
-                <input type="password" name="" required="" placeholder="Enter Your Password">
-            </div>
-            
-            <div class="forbtn">
-                <input type="submit" name="" value="Submit">
-            </div>
-        </form> -->
-
     </section>
 
     <div class="footer">
@@ -220,17 +200,14 @@
     <script>
         // for loading animation
         let footer = document.querySelector('.footer');
-        // let container = document.querySelector('.container');
         let loadingAnimation = document.querySelector('.loading-animation');
         let body = document.querySelector('body');
 
         window.onload = function () {
             footer.style.display = 'block';
-            // container.style.display = 'block';
             body.style.overflow = 'auto';
             loadingAnimation.style.animationName = 'show-website';
             loadingAnimation.style.opacity = '0';
-            // loadingAnimation.style.display = 'none';
         };
     </script>
 
@@ -265,14 +242,10 @@
 
         window.onscroll = function () {
             if (scrollY < 136) {
-                // document.getElementById('topBtn').style.opacity = '0';
-                // document.querySelector('nav').style.background = 'rgb(5,5,5)';
                 skillAnimate();
                 skillNull();
             }
             else {
-                // document.getElementById('topBtn').style.opacity = '1';
-                // document.querySelector('nav').style.background = 'rgb(118,33,236)';
                 skilFill();
             }
         }
@@ -378,19 +351,6 @@
         });
 
     </script>
-
-    <!-- <script type="text/javascript" src="vanilla-tilt.js"></script>
-
-    <script>
-        if (window.innerWidth > 500) {
-            VanillaTilt.init(document.querySelectorAll(".tool"), {
-                max: 25,
-                speed: 400,
-                glare: true,
-                "max-glare": .5
-            });
-        }
-    </script> -->
 
 </body>
 

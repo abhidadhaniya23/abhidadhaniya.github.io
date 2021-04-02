@@ -1,24 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap'); */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap'); */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap'); */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
 
 :root {
 
-    /* --font1: 'Titillium Web', sans-serif; */
-
-    /* --font1: 'Archivo', sans-serif; */
     --font1:'Manrope', sans-serif;
     --font2:'Lobster Two', cursive;
     --font4:'Oxygen', sans-serif;
@@ -28,17 +15,13 @@
     --x1:7px;
     --y1:100px;
     --x2:7px;
-    --y2:20px;    /* --color1: #f16334; */
+    --y2:20px;
 
-    /* --color1: rgb(0, 183, 255); */
     --color1:rgb(82, 44, 250);
     --color2:rgba(255, 255, 255, 0.822);
     --color3:#121e31;
     --color4:rgb(240, 240, 240);
-    --color5:rgb(30, 7, 134);    /*--color1: rgb(10, 10, 10);
-    --color2: rgb(31, 31, 31);
-    --color4: rgb(10,33,53);
-    --color6: rgb(5,5,5); */
+    --color5:rgb(30, 7, 134);
 }
 
 #svg_first {
@@ -59,7 +42,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--font1);    /* transition: 0.6s ease; */
+    font-family: var(--font1);
 }
 
 html {
@@ -87,8 +70,6 @@ body {
     align-items: center;
 }
 
-/* #first .heading h1{
-} */
 #first .heading .details {
     margin: 0 0 -10px;
     display: flex;
@@ -256,13 +237,6 @@ body {
 
 /* third section  :  development */
 #third {
-
-    /* background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.397)),url(1.jpg); */
-
-    /* background-position: center;
-    background-size: cover; */
-
-    /* background-attachment: fixed; */
     background: var(--color4);
     height: auto;
     padding: 0 0 40px;
@@ -312,7 +286,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;    /* margin: 0 0 -50px; */
+    align-items: center;
 }
 
 #third .photo img {
@@ -358,7 +332,7 @@ body {
 
 /* Forth Section */
 #forth {
-    height: auto;    /* background-image: url(13.jpg); */
+    height: auto;
     background: linear-gradient(180deg, rgba(82, 44, 250, 0.582), rgba(30, 7, 134, 0.342)), url(bg.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -407,7 +381,7 @@ body {
 
 #forth .content .projects .about {
     display: flex;
-    justify-content: center;    /* background: #ffffff30; */
+    justify-content: center;
     background: rgb(255, 255, 255, 0.1);
     padding: 10px;
     width: 90%;
@@ -440,7 +414,7 @@ body {
     border-radius: var(--project_border_radius);
     backdrop-filter: blur(var(--blur));
     background: rgb(255 255 255 / 08%);
-    color: var(--color2);    /* cursor: pointer; */
+    color: var(--color2);
 }
 
 #forth .content .projects .list .tool .project_pic img {
@@ -489,10 +463,6 @@ body {
     background: whitesmoke;
 }
 
-/* #fifth h2{
-    margin: 20px auto;
-    font-size: 45px;
-} */
 #fifth h2 {
     width: 90%;
     z-index: 10;
@@ -588,20 +558,6 @@ body {
     background: var(--color1);
 }
 
-/* #fifth .details .email,
-#fifth .details .contact, */
-
-/* this is only for contact input forms */
-
-/* #fifth form input[type='text'],
-#fifth form input[type='password']{
-    margin: 5px auto;
-    border-bottom: 1px solid var(--color1);
-    width: 400px;
-    padding: 10px;
-}
-*/
-
 /* loading animation */
 .loading-animation {
     position: absolute;
@@ -629,18 +585,6 @@ body {
         opacity: 0;
     }
 }
-
-/* html {
-    height: 100%;
-}
-
-body {
-    height: 100%;
-    background: #141e30;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 .loader {
     position: relative;
