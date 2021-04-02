@@ -225,19 +225,19 @@ body {
 }
 
 .html {
-    width: 90%;
+    width: 0%;
 }
 
 .css {
-    width: 80%;
+    width: 0%;
 }
 
 .js {
-    width: 65%;
+    width: 0%;
 }
 
 .graphic {
-    width: 50%;
+    width: 0%;
 }
 
 @keyframes load {
