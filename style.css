@@ -616,6 +616,18 @@ body {
     background: #141e30;
     z-index: 1000000000;
     overflow-y: hidden;
+    animation-name: show-website;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+@keyframes show-website{
+    from {
+        opacity: 1;
+        }
+    to {
+        opacity: 0;
+    }
 }
 
 /* html {
