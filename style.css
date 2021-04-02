@@ -616,7 +616,7 @@ body {
     background: #141e30;
     z-index: 1000000000;
     overflow-y: hidden;
-    animation-name: show-website;
+    /* animation-name: show-website; */
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
