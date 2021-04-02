@@ -570,7 +570,7 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
-    background: #141e30;
+    background: white;
     z-index: 100000;
     overflow-y: hidden;
     /* animation-name: show-website; */
@@ -587,243 +587,130 @@ body {
     }
 }
 
-.loader {
-    position: relative;
-    width: 75px;
-    height: 100px;
-}
-
-.loader__bar {
+/* .loading-animation{
     position: absolute;
-    bottom: 0;
-    width: 10px;
-    height: 50%;
-    background: #fff;
-    transform-origin: center bottom;
-    box-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven{
+    margin: 0 2px;
+    width: 5px;
+    height: 50px;
+    /* padding: 40px 5px; */
+    background: crimson;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    /* animation-delay: ; */
 }
-
-.loader__bar:nth-child(1) {
-    left: 0px;
-    transform: scale(1, 0.2);
-    animation: barUp1 4s infinite;
+.one{
+    animation-name: one;
+    animation-delay: .2s;
 }
-
-.loader__bar:nth-child(2) {
-    left: 15px;
-    transform: scale(1, 0.4);
-    animation: barUp2 4s infinite;
+@keyframes one{
+    0%{
+        width: 5px;
+        height: 50px;
+    }
+    100%{
+        width: 5px;
+        height: 10px;
+    }
 }
-
-.loader__bar:nth-child(3) {
-    left: 30px;
-    transform: scale(1, 0.6);
-    animation: barUp3 4s infinite;
+.two{
+    animation-name: two;
+    animation-delay: .4s;
 }
-
-.loader__bar:nth-child(4) {
-    left: 45px;
-    transform: scale(1, 0.8);
-    animation: barUp4 4s infinite;
+@keyframes two{
+    0%{
+        width: 5px;
+        height: 50px;
+    }
+    100%{
+        width: 5px;
+        height: 10px;
+    }
 }
-
-.loader__bar:nth-child(5) {
-    left: 60px;
-    transform: scale(1, 1);
-    animation: barUp5 4s infinite;
+.three{
+    animation-name: three;
+    animation-delay: .6s;
 }
-
-.loader__ball {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    border-radius: 50%;
-    animation: ball 4s infinite;
+@keyframes three{
+    0%{
+        width: 5px;
+        height: 50px;
+    }
+    100%{
+        width: 5px;
+        height: 10px;
+    }
 }
-
-@keyframes ball {
-    0% {
-        transform: translate(0, 0);
-    }
-
-    5% {
-        transform: translate(8px, -14px);
-    }
-
-    10% {
-        transform: translate(15px, -10px);
-    }
-
-    17% {
-        transform: translate(23px, -24px);
-    }
-
-    20% {
-        transform: translate(30px, -20px);
-    }
-
-    27% {
-        transform: translate(38px, -34px);
-    }
-
-    30% {
-        transform: translate(45px, -30px);
-    }
-
-    37% {
-        transform: translate(53px, -44px);
-    }
-
-    40% {
-        transform: translate(60px, -40px);
-    }
-
-    50% {
-        transform: translate(60px, 0);
-    }
-
-    57% {
-        transform: translate(53px, -14px);
-    }
-
-    60% {
-        transform: translate(45px, -10px);
-    }
-
-    67% {
-        transform: translate(37px, -24px);
-    }
-
-    70% {
-        transform: translate(30px, -20px);
-    }
-
-    77% {
-        transform: translate(22px, -34px);
-    }
-
-    80% {
-        transform: translate(15px, -30px);
-    }
-
-    87% {
-        transform: translate(7px, -44px);
-    }
-
-    90% {
-        transform: translate(0, -40px);
-    }
-
-    100% {
-        transform: translate(0, 0);
-    }
-
+.four{
+    animation-name: four;
+    animation-delay: .8s;
 }
-
-@keyframes barUp1 {
-    0% {
-        transform: scale(1, 0.2);
+@keyframes four{
+    0%{
+        width: 5px;
+        height: 50px;
     }
-
-    40% {
-        transform: scale(1, 0.2);
+    100%{
+        width: 5px;
+        height: 10px;
     }
-
-    50% {
-        transform: scale(1, 1);
-    }
-
-    90% {
-        transform: scale(1, 1);
-    }
-
-    100% {
-        transform: scale(1, 0.2);
-    }
-
 }
-
-@keyframes barUp2 {
-    0% {
-        transform: scale(1, 0.4);
-    }
-
-    40% {
-        transform: scale(1, 0.4);
-    }
-
-    50% {
-        transform: scale(1, 0.8);
-    }
-
-    90% {
-        transform: scale(1, 0.8);
-    }
-
-    100% {
-        transform: scale(1, 0.4);
-    }
-
+.five{
+    animation-name: five;
+    animation-delay: 1s;
 }
-
-@keyframes barUp3 {
-    0% {
-        transform: scale(1, 0.6);
+@keyframes five{
+    0%{
+        width: 5px;
+        height: 50px;
     }
-
-    100% {
-        transform: scale(1, 0.6);
+    100%{
+        width: 5px;
+        height: 10px;
     }
-
 }
-
-@keyframes barUp4 {
-    0% {
-        transform: scale(1, 0.8);
-    }
-
-    40% {
-        transform: scale(1, 0.8);
-    }
-
-    50% {
-        transform: scale(1, 0.4);
-    }
-
-    90% {
-        transform: scale(1, 0.4);
-    }
-
-    100% {
-        transform: scale(1, 0.8);
-    }
-
+.six{
+    animation-name: six;
+    animation-delay: 1.2s;
 }
-
-@keyframes barUp5 {
-    0% {
-        transform: scale(1, 1);
+@keyframes six{
+    0%{
+        width: 5px;
+        height: 50px;
     }
-
-    40% {
-        transform: scale(1, 1);
+    100%{
+        width: 5px;
+        height: 10px;
     }
-
-    50% {
-        transform: scale(1, 0.2);
+}
+.seven{
+    animation-name: seven;
+    animation-delay: 1.4s;
+}
+@keyframes seven{
+    0%{
+        width: 5px;
+        height: 50px;
     }
-
-    90% {
-        transform: scale(1, 0.2);
+    100%{
+        width: 5px;
+        height: 10px;
     }
-
-    100% {
-        transform: scale(1, 1);
-    }
-
 }
 
 /* Media Quries */
