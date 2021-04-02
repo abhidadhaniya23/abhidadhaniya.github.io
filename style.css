@@ -50,7 +50,7 @@ html {
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* First section  :  Header */
@@ -560,7 +560,7 @@ body {
 }
 
 /* loading animation */
-.loading-animation {
+/* .loading-animation {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -642,7 +642,7 @@ body {
     background: #fff;
     border-radius: 50%;
     animation: ball 4s infinite;
-}
+} */
 
 @keyframes ball {
     0% {
