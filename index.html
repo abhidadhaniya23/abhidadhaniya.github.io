@@ -202,8 +202,12 @@
             body.style.overflow = 'auto';
             loadingAnimation.style.animationName = 'show-website';
             loadingAnimation.style.opacity = '0';
+            setTimeout(displayBlock, 1100);
         };
 
+        function displayBlock(){
+            loadingAnimation.style.display = 'none';
+        }
 
 
         function showemail() {
