@@ -359,7 +359,7 @@ body {
 /* Forth Section */
 #forth {
     height: auto;    /* background-image: url(13.jpg); */
-    background: linear-gradient(180deg, rgba(82, 44, 250, 0.582), rgba(30, 7, 134, 0.342)), url(13.jpg);
+    background: linear-gradient(180deg, rgba(82, 44, 250, 0.582), rgba(30, 7, 134, 0.342)), url(bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
