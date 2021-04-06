@@ -745,16 +745,16 @@ function showQuestion() {
         <div class="que">${i + 1}. ${json[temp].question}</div>
         <p id="warning">*please select any answere...</p>
         <div class="answeres">
-            <input type="radio" id="radioA" class="ansbtn option-input radio" name="ans" value="A">
+            <input type="radio" onclick="selectA()" id="radioA" class="ansbtn option-input radio" name="ans" value="A">
             <label id="labelA" onclick="selectA();ansSet();hideWarning()">A. ${json[temp].optionA}</label>
             <br>
-            <input type="radio" id="radioB" class="ansbtn option-input radio" name="ans" value="B">
+            <input type="radio" onclick="selectB()" id="radioB" class="ansbtn option-input radio" name="ans" value="B">
             <label id="labelB" onclick="selectB();ansSet();hideWarning()">B. ${json[temp].optionB}</label>
             <br>
-            <input type="radio" id="radioC" class="ansbtn option-input radio" name="ans" value="C">
+            <input type="radio" onclick="selectC()" id="radioC" class="ansbtn option-input radio" name="ans" value="C">
             <label id="labelC" onclick="selectC();ansSet();hideWarning()">C. ${json[temp].optionC}</label>
             <br>
-            <input type="radio" id="radioD" class="ansbtn option-input radio" name="ans" value="D">
+            <input type="radio" onclick="selectD()" id="radioD" class="ansbtn option-input radio" name="ans" value="D">
             <label id="labelD" onclick="selectD();ansSet();hideWarning()">D. ${json[temp].optionD}</label>
         </div>
     </form>
@@ -829,16 +829,16 @@ function changeQuestion() {
         <div class="que">${i + 1}. ${json[temp].question}</div>
         <p id="warning">*please select any answere...</p>
         <div class="answeres">
-            <input type="radio" id="radioA" class="ansbtn option-input radio" name="ans" value="A">
+            <input type="radio" onclick="selectA()" id="radioA" class="ansbtn option-input radio" name="ans" value="A">
             <label id="labelA" onclick="selectA();ansSet();hideWarning()">A. ${json[temp].optionA}</label>
             <br>
-            <input type="radio" id="radioB" class="ansbtn option-input radio" name="ans" value="B">
+            <input type="radio" onclick="selectB()" id="radioB" class="ansbtn option-input radio" name="ans" value="B">
             <label id="labelB" onclick="selectB();ansSet();hideWarning()">B. ${json[temp].optionB}</label>
             <br>
-            <input type="radio" id="radioC" class="ansbtn option-input radio" name="ans" value="C">
+            <input type="radio" onclick="selectC()" id="radioC" class="ansbtn option-input radio" name="ans" value="C">
             <label id="labelC" onclick="selectC();ansSet();hideWarning()">C. ${json[temp].optionC}</label>
             <br>
-            <input type="radio" id="radioD" class="ansbtn option-input radio" name="ans" value="D">
+            <input type="radio" onclick="selectD()" id="radioD" class="ansbtn option-input radio" name="ans" value="D">
             <label id="labelD" onclick="selectD();ansSet();hideWarning()">D. ${json[temp].optionD}</label>
         </div>
     </form>
