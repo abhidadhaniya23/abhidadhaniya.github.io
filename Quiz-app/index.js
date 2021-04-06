@@ -743,7 +743,7 @@ function showQuestion() {
     html = `
     <form oninput="ansSet()" id="ansBtn">
         <div class="que">${i + 1}. ${json[temp].question}</div>
-        <p id="warning">*please select any answere...</p>
+        <p id="warning">*please select any answer...</p>
         <div class="answeres">
             <input type="radio" onclick="selectA()" id="radioA" class="ansbtn option-input radio" name="ans" value="A">
             <label id="labelA" onclick="selectA();ansSet();hideWarning()">A. ${json[temp].optionA}</label>
