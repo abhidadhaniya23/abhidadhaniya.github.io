@@ -691,42 +691,42 @@ function refreshPage() {
 
 function selectA() {
     document.getElementById('radioA').checked = true;
-    document.getElementById('labelA').style.color = 'var(--fixcolor)';
-    document.getElementById('labelB').style.color = 'var(--nonSelect)';
-    document.getElementById('labelC').style.color = 'var(--nonSelect)';
-    document.getElementById('labelD').style.color = 'var(--nonSelect)';
+    document.getElementById('labelA').style.color = '#00cfff';
+    document.getElementById('labelB').style.color = '#89939f';
+    document.getElementById('labelC').style.color = '#89939f';
+    document.getElementById('labelD').style.color = '#89939f';
 }
 
 function selectB() {
     document.getElementById('radioB').checked = true;
-    document.getElementById('labelB').style.color = 'var(--fixcolor)';
-    document.getElementById('labelA').style.color = 'var(--nonSelect)';
-    document.getElementById('labelC').style.color = 'var(--nonSelect)';
-    document.getElementById('labelD').style.color = 'var(--nonSelect)';
+    document.getElementById('labelB').style.color = '#00cfff';
+    document.getElementById('labelA').style.color = '#89939f';
+    document.getElementById('labelC').style.color = '#89939f';
+    document.getElementById('labelD').style.color = '#89939f';
 }
 
 function selectC() {
     document.getElementById('radioC').checked = true;
-    document.getElementById('labelC').style.color = 'var(--fixcolor)';
-    document.getElementById('labelB').style.color = 'var(--nonSelect)';
-    document.getElementById('labelA').style.color = 'var(--nonSelect)';
-    document.getElementById('labelD').style.color = 'var(--nonSelect)';
+    document.getElementById('labelC').style.color = '#00cfff';
+    document.getElementById('labelB').style.color = '#89939f';
+    document.getElementById('labelA').style.color = '#89939f';
+    document.getElementById('labelD').style.color = '#89939f';
 }
 
 function selectD() {
     document.getElementById('radioD').checked = true;
-    document.getElementById('labelD').style.color = 'var(--fixcolor)';
-    document.getElementById('labelB').style.color = 'var(--nonSelect)';
-    document.getElementById('labelC').style.color = 'var(--nonSelect)';
-    document.getElementById('labelA').style.color = 'var(--nonSelect)';
+    document.getElementById('labelD').style.color = '#00cfff';
+    document.getElementById('labelB').style.color = '#89939f';
+    document.getElementById('labelC').style.color = '#89939f';
+    document.getElementById('labelA').style.color = '#89939f';
 }
 
 showQuestion();
 
 function ansSet() {
-    document.getElementById('submit').style.background = 'var(--fixcolor)';
+    document.getElementById('submit').style.background = '#00cfff';
     document.getElementById('submit').style.cursor = 'pointer';
-    document.getElementById('submit').style.boxShadow = '0px -10px 60px -12px var(--fixcolor)';
+    document.getElementById('submit').style.boxShadow = '0px -10px 60px -12px #00cfff';
 }
 
 function ansNotSet() {
@@ -815,8 +815,8 @@ function changeQuestion() {
     selectedAns();
     // console.log('Before countScore() call...');
     countScore();
-    document.getElementById('winScore').innerHTML = `Right<br>${score}`;
-    document.getElementById('lossScore').innerHTML = `Wrong<br>${lossScore}`;
+    document.getElementById('winScore').innerHTML = `Right&#10004;<br>${score}`;
+    document.getElementById('lossScore').innerHTML = `Wrong&#10008;<br>${lossScore}`;
     if (i == (10)) {
         i = 0;
         // console.log('------------');
