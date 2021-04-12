@@ -679,6 +679,9 @@ let inputVal;
 let temp;
 let randomNumber;
 
+let fixcolor='orange';
+let nonSelect='#89939f';
+
 function randomNumberGenerate() {
     randomNumber = parseInt(Math.random() * json.length - 1);
     temp = randomNumber;
@@ -691,42 +694,42 @@ function refreshPage() {
 
 function selectA() {
     document.getElementById('radioA').checked = true;
-    document.getElementById('labelA').style.color = '#00cfff';
-    document.getElementById('labelB').style.color = '#89939f';
-    document.getElementById('labelC').style.color = '#89939f';
-    document.getElementById('labelD').style.color = '#89939f';
+    document.getElementById('labelA').style.color = fixcolor;
+    document.getElementById('labelB').style.color = nonSelect;
+    document.getElementById('labelC').style.color = nonSelect;
+    document.getElementById('labelD').style.color = nonSelect;
 }
 
 function selectB() {
     document.getElementById('radioB').checked = true;
-    document.getElementById('labelB').style.color = '#00cfff';
-    document.getElementById('labelA').style.color = '#89939f';
-    document.getElementById('labelC').style.color = '#89939f';
-    document.getElementById('labelD').style.color = '#89939f';
+    document.getElementById('labelB').style.color = fixcolor;
+    document.getElementById('labelA').style.color = nonSelect;
+    document.getElementById('labelC').style.color = nonSelect;
+    document.getElementById('labelD').style.color = nonSelect;
 }
 
 function selectC() {
     document.getElementById('radioC').checked = true;
-    document.getElementById('labelC').style.color = '#00cfff';
-    document.getElementById('labelB').style.color = '#89939f';
-    document.getElementById('labelA').style.color = '#89939f';
-    document.getElementById('labelD').style.color = '#89939f';
+    document.getElementById('labelC').style.color = fixcolor;
+    document.getElementById('labelB').style.color = nonSelect;
+    document.getElementById('labelA').style.color = nonSelect;
+    document.getElementById('labelD').style.color = nonSelect;
 }
 
 function selectD() {
     document.getElementById('radioD').checked = true;
-    document.getElementById('labelD').style.color = '#00cfff';
-    document.getElementById('labelB').style.color = '#89939f';
-    document.getElementById('labelC').style.color = '#89939f';
-    document.getElementById('labelA').style.color = '#89939f';
+    document.getElementById('labelD').style.color = fixcolor;
+    document.getElementById('labelB').style.color = nonSelect;
+    document.getElementById('labelC').style.color = nonSelect;
+    document.getElementById('labelA').style.color = nonSelect;
 }
 
 showQuestion();
 
 function ansSet() {
-    document.getElementById('submit').style.background = '#00cfff';
+    document.getElementById('submit').style.background = fixcolor;
     document.getElementById('submit').style.cursor = 'pointer';
-    document.getElementById('submit').style.boxShadow = '0px -10px 60px -12px #00cfff';
+    document.getElementById('submit').style.boxShadow = `0px -10px 60px -12px ${fixcolor}`;
 }
 
 function ansNotSet() {

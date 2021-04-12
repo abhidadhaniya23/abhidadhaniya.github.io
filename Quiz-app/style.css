@@ -7,8 +7,12 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap'); */
 
+@font-face {
+    font-family: NeueHaasDisplayLight;
+    src: url(NeueHaasDisplayLight.woff);
+}
 * {
     margin: 0;
     padding: 0;    /* font-family: 'Oxygen', sans-serif; */
@@ -18,18 +22,18 @@
     /* font-family: 'Roboto', sans-serif; */
 
     /* font-family: 'Manrope', sans-serif; */
-    font-family: 'Sora', sans-serif;
+    font-family: NeueHaasDisplayLight;
     box-sizing: border-box;
-    letter-spacing: 0.2px;
+    letter-spacing: 1.4px;
 }
 
 :root {
 
-    /* --fixcolor: orange; */
+    --fixcolor: orange;
 
-    /* --temp-color: orange; */
-    --temp-color: #00c3ff;
-    --fixcolor: #00cfff;
+    --temp-color: orange;
+    /* --temp-color: #00c3ff; */
+    /* --fixcolor: #00cfff; */
     --shadow: var(--fixcolor);
     --nonSelect: #89939f;
     --bg: rgb(8 20 39);
@@ -120,7 +124,7 @@ label {
 .que {
     text-align: justify;
     font-weight: 600;
-    line-height: 25px;
+    line-height: 33px;
     color: #081427d9;
 }
 
@@ -156,7 +160,7 @@ label {
 
 .container .answeres input {
     cursor: pointer;
-    margin: 8px;
+    margin: 5px 5px 12px 5px;
 }
 
 /* 
@@ -211,7 +215,6 @@ font-size: 15px;
 
 .result h5 {
     font-size: 1rem;
-    letter-spacing: 0.5px;
 }
 
 .scoreBoard {
