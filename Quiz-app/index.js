@@ -630,39 +630,6 @@ let json = [{
     "__v": 0
 }]
 
-
-// let json = [{
-//     "question": 'What is the full form of HTML1 ?',
-//     "ans": 'A',
-//     "optionA": 'Https',
-//     "optionB": 'Hyper text markup language',
-//     "optionC": 'Hydra typing male',
-//     "optionD": 'htutu'
-// }, {
-//     "question": 'What is the full form of HTML2 ?',
-//     "ans": 'B',
-//     "optionA": 'ad',
-//     "optionB": 'Hyper text markup language',
-//     "optionC": 'Hydra typing male',
-//     "optionD": 'htutu'
-// }, {
-//     "question": 'What is the full form of HTML3 ?',
-//     "ans": 'C',
-//     "optionA": 'Https',
-//     "optionB": 'Hyper text markup language',
-//     "optionC": 'Female',
-//     "optionD": 'htutu'
-// }, {
-//     "question": 'What is the full form of HTML4 ?',
-//     "ans": 'D',
-//     "optionA": 'Https',
-//     "optionB": 'Hyper text markup language',
-//     "optionC": 'Hydra typing male',
-//     "optionD": 'ad patel'
-// }];
-
-// document.getElementById('container').style.color = 'red';
-
 // all declearations...
 let i = 0;
 let html;
@@ -682,12 +649,14 @@ let randomNumber;
 let fixcolor='orange';
 let nonSelect='#89939f';
 
+// function for generate random number...
 function randomNumberGenerate() {
     randomNumber = parseInt(Math.random() * json.length - 1);
     temp = randomNumber;
     return temp;
 }
 
+// reaload page for restart quiz
 function refreshPage() {
     location.reload();
 }
@@ -699,7 +668,6 @@ function selectA() {
     document.getElementById('labelC').style.color = nonSelect;
     document.getElementById('labelD').style.color = nonSelect;
 }
-
 function selectB() {
     document.getElementById('radioB').checked = true;
     document.getElementById('labelB').style.color = fixcolor;
@@ -707,7 +675,6 @@ function selectB() {
     document.getElementById('labelC').style.color = nonSelect;
     document.getElementById('labelD').style.color = nonSelect;
 }
-
 function selectC() {
     document.getElementById('radioC').checked = true;
     document.getElementById('labelC').style.color = fixcolor;
@@ -715,7 +682,6 @@ function selectC() {
     document.getElementById('labelA').style.color = nonSelect;
     document.getElementById('labelD').style.color = nonSelect;
 }
-
 function selectD() {
     document.getElementById('radioD').checked = true;
     document.getElementById('labelD').style.color = fixcolor;
@@ -726,20 +692,23 @@ function selectD() {
 
 showQuestion();
 
+// function for set colors on fill and non fill answer actions
 function ansSet() {
     document.getElementById('submit').style.background = fixcolor;
     document.getElementById('submit').style.cursor = 'pointer';
     document.getElementById('submit').style.boxShadow = `0px -10px 60px -12px ${fixcolor}`;
 }
-
 function ansNotSet() {
     document.getElementById('submit').style.background = 'rgb(194, 194, 194)';
     document.getElementById('submit').style.cursor = 'not-allowed';
     document.getElementById('submit').style.boxShadow = 'none';
 }
 
+// show function for display all qustions and answers...
 function showQuestion() {
+    // first call of randomNumberGenerate function...
     randomNumberGenerate();
+    // some testing consoles... (just for testing)
     // console.log(`random number generated at showQuestion : ${temp}`);
     // console.log('the data of this question');
     // console.log(`${json[temp]}`);
@@ -770,57 +739,42 @@ function showQuestion() {
 
 }
 
+// when user click submit button and this line check answer is selected or not using isAnsSelected function...
 submitAns.addEventListener('click', isAnsSelected);
-
-// document.getElementById('okBtn').addEventListener('click', hideWarning);
 
 // display right answeres in score board
 document.getElementById('winScore').innerHTML = `Right&#10004;<br>${score}`;
 // display wrong answeres in score board
 document.getElementById('lossScore').innerHTML = `Wrong&#10008;<br>${lossScore}`;
 
+// this warning generates for please select any answer
 function hideWarning() {
     document.getElementById('warning').style.display = 'none';
 };
 
+// for check user selected answer or not ?
 function isAnsSelected() {
     if (radioBtn[0].checked || radioBtn[1].checked || radioBtn[2].checked || radioBtn[3].checked) {
         changeQuestion();
     } else {
-        // warning.style.animation = 'showWarning 1s ease alternate';
         document.getElementById('warning').style.display = 'block';
         // console.log('Ans not Selected');
     }
 }
 
-// let storeRandomNumbers=[];
-let randomNumber2;
-
+// function for next question...
 function changeQuestion() {
-
-    // randomNumberGenerate();
 
     // console.log(`random number generated at changeQuestion : ${temp}`);
 
-
-    // randomNumber2 = parseInt(Math.random() * json.length - 1);
-    // Array.from(storeRandomNumbers).forEach(function(e){
-    //     // console.log(`your element is : ${e}`);
-    //     if(randomNumber==e){
-    //         // console.log(`element matched`);
-    //         randomNumber=parseInt(Math.random()*9);
-    //     }
-    // })
-    // storeRandomNumbers.push(randomNumber);
-    // console.log(storeRandomNumbers);
-
-
+    // checks answer selected or not ??
     selectedAns();
-    // console.log('Before countScore() call...');
+    // count score for user's answer...
     countScore();
     document.getElementById('winScore').innerHTML = `Right&#10004;<br>${score}`;
     document.getElementById('lossScore').innerHTML = `Wrong&#10008;<br>${lossScore}`;
     if (i == (10)) {
+        // now this is not use when user show result...
         i = 0;
         // console.log('------------');
         // console.log(`yout score is -------> ${score}`);
@@ -857,8 +811,6 @@ function changeQuestion() {
     }
 }
 
-let increment = 0;
-
 function countScore() {
     // console.log(`Json question ans : ${json[increment].ans}`);
     // console.log(`random number generated at count score : ${temp}`);
@@ -870,19 +822,16 @@ function countScore() {
     } else {
         lossScore++;
     }
-    // console.log(`Score : ${score}`);
-    // console.log(`your score inside displayResult function : ${score}`);
-    // if(increment==10){
-    //     increment=0;
-    // }
-    increment++;
+    // again generate random number for next random question...
     randomNumberGenerate();
 }
 
+// apologize line for hard questions...
 sorryLine = `<p id="warningDetails" style="font-weight: 600">I really apologize for some type of weird or difficult questions. &#128516</p>`;
 
 resultLine=`you got ${(score/10)*100}% in this quiz. &#128522`;
 
+// display result when finished 10 questions...
 function displayResult() {
     if(score>=7){
         resultLine=`you got ${(score/10)*100}% in this quiz. &#129321`;
@@ -932,20 +881,10 @@ function displayResult() {
             document.getElementById('finalScore').style.color = 'red';
             break;
     }
-    // let finalScore=document.getElementById('container');
-
-
-    // document.getElementById('warning').innerHTML = result;
-    // warning.style.top = '0px';
 }
-
-// function hideMessage() {
-//     warning.style.top = '-100px';
-// }
 
 function selectedAns() {
     for (let x = 0; x < radioBtn.length; x++) {
-        // console.log(names[0].value);
         if (radioBtn[x].checked) {
             inputVal = radioBtn[x].value;
             // console.log('-------');
