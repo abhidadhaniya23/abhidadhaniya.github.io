@@ -1,633 +1,363 @@
 let json = [{
-    "incorrect_answers": ["Cancer", "Meningitis", "Polio", "HIV"],
+    // "incorrect_answers": ["Cancer", "Meningitis", "Polio", "HIV"],
     "optionA": "Cancer",
     "optionB": "Meningitis",
     "optionC": "Polio",
     "optionD": "HIV",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee226",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "What disease crippled President Franklin D. Roosevelt and led him to help the nation find a cure?",
-    "correct_answer": "Polio",
-    "__v": 0
+    "question": "What disease crippled President Franklin D. Roosevelt and led him to help the nation find a cure?"
 }, {
-    "incorrect_answers": ["John and Mary", "William and Elizabeth", "George and Anne", "Joseph and Catherine"],
+    // "incorrect_answers": ["John and Mary", "William and Elizabeth", "George and Anne", "Joseph and Catherine"],
     "optionA": "John and Mary",
     "optionB": "William and Elizabeth",
     "optionC": "George and Anne",
     "optionD": "Joseph and Catherine",
     "ans": "A",
-    "_id": "5f234efb56bca10004bee228",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "In the year 1900, what were the most popular first names given to boy and girl babies born in the United States?",
-    "correct_answer": "John and Mary",
-    "__v": 0
+    "question": "In the year 1900, what were the most popular first names given to boy and girl babies born in the United States?"
 }, {
-    "incorrect_answers": ["Baroque", "Romantic", "Classic", "Renaissance"],
+    // "incorrect_answers": ["Baroque", "Romantic", "Classic", "Renaissance"],
     "optionA": "Baroque",
     "optionB": "Romantic",
     "optionC": "Classic",
     "optionD": "Renaissance",
     "ans": "B",
-    "_id": "5f234efb56bca10004bee227",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "Pianist Fredric Chopin was a composer of which musical era?",
-    "correct_answer": "Romantic",
-    "__v": 0
+    "question": "Pianist Fredric Chopin was a composer of which musical era?"
 }, {
-    "incorrect_answers": ["Leif Erikson", "Amerigo Vespucci", "Ferdinand Magellan", "Christopher Columbus"],
+    // "incorrect_answers": ["Leif Erikson", "Amerigo Vespucci", "Ferdinand Magellan", "Christopher Columbus"],
     "optionA": "Leif Erikson",
     "optionB": "Amerigo Vespucci",
     "optionC": "Ferdinand Magellan",
     "optionD": "Christopher Columbus",
     "ans": "A",
-    "_id": "5f234efb56bca10004bee229",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Who was the first explorer to sail to North America?",
-    "correct_answer": "Leif Erikson",
-    "__v": 0
+    "question": "Who was the first explorer to sail to North America?"
 }, {
-    "incorrect_answers": ["Catherine of Aragon", "Jane Seymour", "Catherine Parr", "Anne Boleyn"],
+    // "incorrect_answers": ["Catherine of Aragon", "Jane Seymour", "Catherine Parr", "Anne Boleyn"],
     "optionA": "Catherine of Aragon",
     "optionB": "Jane Seymour",
     "optionC": "Catherine Parr",
     "optionD": "Anne Boleyn",
     "ans": "A",
-    "_id": "5f234efb56bca10004bee22a",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Which of his six wives was Henry VIII married to the longest?",
-    "correct_answer": "Catherine of Aragon",
-    "__v": 0
+    "question": "Which of his six wives was Henry VIII married to the longest?"
 }, {
-    "incorrect_answers": ["Germany", "Italy", "Austria", "France"],
+    // "incorrect_answers": ["Germany", "Italy", "Austria", "France"],
     "optionA": "Germany",
     "optionB": "Italy",
     "optionC": "Austria",
     "optionD": "France",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee22c",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "The Battle of the Somme in World War I took place in which country?",
-    "correct_answer": "France",
-    "__v": 0
+    "question": "The Battle of the Somme in World War I took place in which country?"
 }, {
-    "incorrect_answers": ["50", "55", "54", "60"],
+    // "incorrect_answers": ["50", "55", "54", "60"],
     "optionA": "50",
     "optionB": "55",
     "optionC": "54",
     "optionD": "60",
     "ans": "B",
-    "_id": "5f234efb56bca10004bee22f",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "How old was Lyndon B. Johnson when he assumed the role of President of the United States?",
-    "correct_answer": "55",
-    "__v": 0
+    "question": "How old was Lyndon B. Johnson when he assumed the role of President of the United States?"
 }, {
-    "incorrect_answers": ["October 27, 1980", "October 29, 1969", "December 9, 1991", "November 21, 1969"],
+    // "incorrect_answers": ["October 27, 1980", "October 29, 1969", "December 9, 1991", "November 21, 1969"],
     "optionA": "October 27, 1980",
     "optionB": "October 29, 1969",
     "optionC": "December 9, 1991",
     "optionD": "November 21, 1969",
     "ans": "A",
-    "_id": "5f234efb56bca10004bee22e",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "On which day did ARPANET suffer a 4 hour long network crash?",
-    "correct_answer": "October 27, 1980",
-    "__v": 0
+    "question": "On which day did ARPANET suffer a 4 hour long network crash?"
 }, {
-    "incorrect_answers": ["62", "87", "73", "35"],
+    // "incorrect_answers": ["62", "87", "73", "35"],
     "optionA": "62",
     "optionB": "87",
     "optionC": "73",
     "optionD": "35",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee22d",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "What age was King Henry V when he died?",
-    "correct_answer": "35",
-    "__v": 0
+    "question": "What age was King Henry V when he died?"
 }, {
-    "incorrect_answers": ["Apollo 15", "Apollo 11", "Apollo 13", "Apollo 17"],
+    // "incorrect_answers": ["Apollo 15", "Apollo 11", "Apollo 13", "Apollo 17"],
     "optionA": "Apollo 15",
     "optionB": "Apollo 11",
     "optionC": "Apollo 13",
     "optionD": "Apollo 17",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee230",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "Which Apollo mission was the last one in NASA's Apollo program?",
-    "correct_answer": "Apollo 17",
-    "__v": 0
+    "question": "Which Apollo mission was the last one in NASA's Apollo program?"
 }, {
-    "incorrect_answers": ["USS North Carolina", "USS Pueblo", "USS Indianapolis", "USS Constitution"],
+    // "incorrect_answers": ["USS North Carolina", "USS Pueblo", "USS Indianapolis", "USS Constitution"],
     "optionA": "USS North Carolina",
     "optionB": "USS Pueblo",
     "optionC": "USS Indianapolis",
     "optionD": "USS Constitution",
     "ans": "B",
-    "_id": "5f234efb56bca10004bee231",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "What is the name of the US Navy spy ship which was attacked and captured by North Korean forces in 1968?",
-    "correct_answer": "USS Pueblo",
-    "__v": 0
+    "question": "What is the name of the US Navy spy ship which was attacked and captured by North Korean forces in 1968?"
 }, {
-    "incorrect_answers": ["United States, 1817", "England, 1917", "England, 1817", "United States, 1917"],
+    // "incorrect_answers": ["United States, 1817", "England, 1917", "England, 1817", "United States, 1917"],
     "optionA": "United States, 1817",
     "optionB": "England, 1917",
     "optionC": "England, 1817",
     "optionD": "United States, 1917",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee235",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Where and when was the first cardboard box made for industrial use?",
-    "correct_answer": "England, 1817",
-    "__v": 0
+    "question": "Where and when was the first cardboard box made for industrial use?"
 }, {
-    "incorrect_answers": ["October 9, 1997", "December 12, 1989", "Feburary 7th, 2000", "September 4, 1998"],
+    // "incorrect_answers": ["October 9, 1997", "December 12, 1989", "Feburary 7th, 2000", "September 4, 1998"],
     "optionA": "October 9, 1997",
     "optionB": "December 12, 1989",
     "optionC": "Feburary 7th, 2000",
     "optionD": "September 4, 1998",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee239",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "easy",
-    "question": "When was Google founded?",
-    "correct_answer": "September 4, 1998",
-    "__v": 0
+    "question": "When was Google founded?"
 }, {
-    "incorrect_answers": ["Argentina", "Nepal", "South Africa", "Bulgaria"],
+    // "incorrect_answers": ["Argentina", "Nepal", "South Africa", "Bulgaria"],
     "optionA": "Argentina",
     "optionB": "Nepal",
     "optionC": "South Africa",
     "optionD": "Bulgaria",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee236",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "The Second Boer War in 1899 was fought where?",
-    "correct_answer": "South Africa",
-    "__v": 0
+    "question": "The Second Boer War in 1899 was fought where?"
 }, {
-    "incorrect_answers": ["Socrates", "Plato", "King Philip", "Aristotle"],
+    // "incorrect_answers": ["Socrates", "Plato", "King Philip", "Aristotle"],
     "optionA": "Socrates",
     "optionB": "Plato",
     "optionC": "King Philip",
     "optionD": "Aristotle",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee237",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Who tutored Alexander the Great?",
-    "correct_answer": "Aristotle",
-    "__v": 0
+    "question": "Who tutored Alexander the Great?"
 }, {
-    "incorrect_answers": ["Spain", "Sweden", "Netherlands", "Portugal"],
+    // "incorrect_answers": ["Spain", "Sweden", "Netherlands", "Portugal"],
     "optionA": "Spain",
     "optionB": "Sweden",
     "optionC": "Netherlands",
     "optionD": "Portugal",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee23c",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Which Nation DID NOT have a Colony in Modern-day America?",
-    "correct_answer": "Portugal",
-    "__v": 0
+    "question": "Which Nation DID NOT have a Colony in Modern-day America?"
 }, {
-    "incorrect_answers": ["Football", "Golf", "Soccer", "Tennis"],
+    // "incorrect_answers": ["Football", "Golf", "Soccer", "Tennis"],
     "optionA": "Football",
     "optionB": "Golf",
     "optionC": "Soccer",
     "optionD": "Tennis",
     "ans": "B",
-    "_id": "5f234efb56bca10004bee23b",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "easy",
-    "question": "What was the first sport to have been played on the moon?",
-    "correct_answer": "Golf",
-    "__v": 0
+    "question": "What was the first sport to have been played on the moon?"
 }, {
-    "incorrect_answers": ["The Incas", "The Aztecs", "The Mayans", "The Navajos"],
+    // "incorrect_answers": ["The Incas", "The Aztecs", "The Mayans", "The Navajos"],
     "optionA": "The Incas",
     "optionB": "The Aztecs",
     "optionC": "The Mayans",
     "optionD": "The Navajos",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee23e",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Which American civilization is the source of the belief that the world would end or drastically change on December 21st, 2012?",
-    "correct_answer": "The Mayans",
-    "__v": 0
+    "question": "Which American civilization is the source of the belief that the world would end or drastically change on December 21st, 2012?"
 }, {
-    "incorrect_answers": ["1066", "1204", "1420", "911"],
+    // "incorrect_answers": ["1066", "1204", "1420", "911"],
     "optionA": "1066",
     "optionB": "1204",
     "optionC": "1420",
     "optionD": "911",
     "ans": "A",
-    "_id": "5f234efb56bca10004bee23f",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "The Battle of Hastings was fought in which year?",
-    "correct_answer": "1066",
-    "__v": 0
+    "question": "The Battle of Hastings was fought in which year?"
 }, {
-    "incorrect_answers": ["June 6, 1944", "December 8, 1941", "September 1, 1939", "June 22, 1941"],
+    // "incorrect_answers": ["June 6, 1944", "December 8, 1941", "September 1, 1939", "June 22, 1941"],
     "optionA": "June 6, 1944",
     "optionB": "December 8, 1941",
     "optionC": "September 1, 1939",
     "optionD": "June 22, 1941",
     "ans": "B",
-    "_id": "5f234efb56bca10004bee241",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "When did the United States formally declare war on Japan, entering World War II?",
-    "correct_answer": "December 8, 1941",
-    "__v": 0
+    "question": "When did the United States formally declare war on Japan, entering World War II?"
 }, {
-    "incorrect_answers": ["4 years", "5 years", "7 years", "6 years"],
+    // "incorrect_answers": ["4 years", "5 years", "7 years", "6 years"],
     "optionA": "4 years",
     "optionB": "5 years",
     "optionC": "7 years",
     "optionD": "6 years",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee242",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "easy",
-    "question": "How long did World War II last?",
-    "correct_answer": "6 years",
-    "__v": 0
+    "question": "How long did World War II last?"
 }, {
-    "incorrect_answers": ["The Siege of Vicksburg", "The Battle of Gettysburg", "The Battle of Antietam", "The Battles of Chancellorsville"],
+    // "incorrect_answers": ["The Siege of Vicksburg", "The Battle of Gettysburg", "The Battle of Antietam", "The Battles of Chancellorsville"],
     "optionA": "The Siege of Vicksburg",
     "optionB": "The Battle of Gettysburg",
     "optionC": "The Battle of Antietam",
     "optionD": "The Battles of Chancellorsville",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee240",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "What was the bloodiest single-day battle during the American Civil War?",
-    "correct_answer": "The Battle of Antietam",
-    "__v": 0
+    "question": "What was the bloodiest single-day battle during the American Civil War?"
 }, {
-    "incorrect_answers": ["350,000", "100,000", "500,000", "225,000"],
+    // "incorrect_answers": ["350,000", "100,000", "500,000", "225,000"],
     "optionA": "350,000",
     "optionB": "100,000",
     "optionC": "500,000",
     "optionD": "225,000",
     "ans": "A",
-    "_id": "5f234efb56bca10004bee244",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "How many women joined the United States Armed Services during World War II?",
-    "correct_answer": "350,000",
-    "__v": 0
+    "question": "How many women joined the United States Armed Services during World War II?"
 }, {
-    "incorrect_answers": ["Gaining independence", "Lower taxes", "Genuine universal suffrage", "Go back under British Rule"],
+    // "incorrect_answers": ["Gaining independence", "Lower taxes", "Genuine universal suffrage", "Go back under British Rule"],
     "optionA": "Gaining independence",
     "optionB": "Lower taxes",
     "optionC": "Genuine universal suffrage",
     "optionD": "Go back under British Rule",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee246",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "What was the aim of the \"Umbrella Revolution\" in Hong Kong in 2014?",
-    "correct_answer": "Genuine universal suffrage",
-    "__v": 0
+    "question": "What was the aim of the \"Umbrella Revolution\" in Hong Kong in 2014?"
 }, {
-    "incorrect_answers": ["1989", "1991", "1993", "1987"],
+    // "incorrect_answers": ["1989", "1991", "1993", "1987"],
     "optionA": "1989",
     "optionB": "1991",
     "optionC": "1993",
     "optionD": "1987",
     "ans": "A",
-    "_id": "5f234efb56bca10004bee247",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "In what year did the Berlin Wall fall?",
-    "correct_answer": "1989",
-    "__v": 0
+    "question": "In what year did the Berlin Wall fall?"
 }, {
-    "incorrect_answers": ["Democrat", "Independent", "Whig", "Republican"],
+    // "incorrect_answers": ["Democrat", "Independent", "Whig", "Republican"],
     "optionA": "Democrat",
     "optionB": "Independent",
     "optionC": "Whig",
     "optionD": "Republican",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee245",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "easy",
-    "question": "To what political party did Abraham Lincoln belong when elected POTUS?",
-    "correct_answer": "Republican",
-    "__v": 0
+    "question": "To what political party did Abraham Lincoln belong when elected POTUS?"
 }, {
-    "incorrect_answers": ["Sig Sauer", "General Electric", "Heckler & Koch", "Colt Firearms"],
+    // "incorrect_answers": ["Sig Sauer", "General Electric", "Heckler & Koch", "Colt Firearms"],
     "optionA": "Sig Sauer",
     "optionB": "General Electric",
     "optionC": "Heckler & Koch",
     "optionD": "Colt Firearms",
     "ans": "B",
-    "_id": "5f234efb56bca10004bee249",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "The minigun was designed by which manufacturer",
-    "correct_answer": "General Electric",
-    "__v": 0
+    "question": "The minigun was designed by which manufacturer"
 }, {
-    "incorrect_answers": ["Leningrad-Novgorod Offensive", "Vistula-Oder Offensive", "Operation Bagration", "Crimean Offensive"],
+    // "incorrect_answers": ["Leningrad-Novgorod Offensive", "Vistula-Oder Offensive", "Operation Bagration", "Crimean Offensive"],
     "optionA": "Leningrad-Novgorod Offensive",
     "optionB": "Vistula-Oder Offensive",
     "optionC": "Operation Bagration",
     "optionD": "Crimean Offensive",
     "ans": "B",
-    "_id": "5f234efb56bca10004bee248",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "Which of the following was not one of Joseph Stalin's ten blows during World War II?",
-    "correct_answer": "Vistula-Oder Offensive",
-    "__v": 0
+    "question": "Which of the following was not one of Joseph Stalin's ten blows during World War II?"
 }, {
-    "incorrect_answers": ["Carpathia", "Cristol", "Californian", "Commerce"],
+    // "incorrect_answers": ["Carpathia", "Cristol", "Californian", "Commerce"],
     "optionA": "Carpathia",
     "optionB": "Cristol",
     "optionC": "Californian",
     "optionD": "Commerce",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee24b",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "What is the name of the ship which was only a few miles away from the RMS Titanic when it struck an iceberg on April 14, 1912?",
-    "correct_answer": "Californian",
-    "__v": 0
+    "question": "What is the name of the ship which was only a few miles away from the RMS Titanic when it struck an iceberg on April 14, 1912?"
 }, {
-    "incorrect_answers": ["Afghanistan", "Iraq", "Russia", "China"],
+    // "incorrect_answers": ["Afghanistan", "Iraq", "Russia", "China"],
     "optionA": "Afghanistan",
     "optionB": "Iraq",
     "optionC": "Russia",
     "optionD": "China",
     "ans": "A",
-    "_id": "5f234efb56bca10004bee24c",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "Which modern country is known as \"The Graveyard of Empires\"?",
-    "correct_answer": "Afghanistan",
-    "__v": 0
+    "question": "Which modern country is known as \"The Graveyard of Empires\"?"
 }, {
-    "incorrect_answers": ["Teaching parrots to talk", "Cheating at card games", "Making jams and jellies", "Digging graves"],
+    // "incorrect_answers": ["Teaching parrots to talk", "Cheating at card games", "Making jams and jellies", "Digging graves"],
     "optionA": "Teaching parrots to talk",
     "optionB": "Cheating at card games",
     "optionC": "Making jams and jellies",
     "optionD": "Digging graves",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee24d",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "In addition to his career as an astrologer and prophet, Nostradamus published a 1555 treatise that included a section on what?",
-    "correct_answer": "Making jams and jellies",
-    "__v": 0
+    "question": "In addition to his career as an astrologer and prophet, Nostradamus published a 1555 treatise that included a section on what?"
 }, {
-    "incorrect_answers": ["Spain", "England", "Germany", "France"],
+    // "incorrect_answers": ["Spain", "England", "Germany", "France"],
     "optionA": "Spain",
     "optionB": "England",
     "optionC": "Germany",
     "optionD": "France",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee24a",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Which country gifted the Statue of Liberty to the United States of America?",
-    "correct_answer": "France",
-    "__v": 0
+    "question": "Which country gifted the Statue of Liberty to the United States of America?"
 }, {
-    "incorrect_answers": ["Mayans", "Incas", "Toltecs", "Aztecs"],
+    // "incorrect_answers": ["Mayans", "Incas", "Toltecs", "Aztecs"],
     "optionA": "Mayans",
     "optionB": "Incas",
     "optionC": "Toltecs",
     "optionD": "Aztecs",
     "ans": "A",
-    "_id": "5f234efb56bca10004bee250",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "The ancient city of Chichen Itza was built by which civilization?",
-    "correct_answer": "Mayans",
-    "__v": 0
+    "question": "The ancient city of Chichen Itza was built by which civilization?"
 }, {
-    "incorrect_answers": ["M4 Sherman", "Panzer IV", "Renault FT", "Cromwell"],
+    // "incorrect_answers": ["M4 Sherman", "Panzer IV", "Renault FT", "Cromwell"],
     "optionA": "M4 Sherman",
     "optionB": "Panzer IV",
     "optionC": "Renault FT",
     "optionD": "Cromwell",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee251",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Which of these 1900s tanks were designed and built BEFORE the others?",
-    "correct_answer": "Renault FT",
-    "__v": 0
+    "question": "Which of these 1900s tanks were designed and built BEFORE the others?"
 }, {
-    "incorrect_answers": ["235 BC", "242 AD", "235 AD", "210 AD"],
+    // "incorrect_answers": ["235 BC", "242 AD", "235 AD", "210 AD"],
     "optionA": "235 BC",
     "optionB": "242 AD",
     "optionC": "235 AD",
     "optionD": "210 AD",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee255",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "When did the Crisis of the Third Century begin?",
-    "correct_answer": "235 AD",
-    "__v": 0
+    "question": "When did the Crisis of the Third Century begin?"
 }, {
-    "incorrect_answers": ["Algiers", "Paris", "Tunis", "Brazzaville"],
+    // "incorrect_answers": ["Algiers", "Paris", "Tunis", "Brazzaville"],
     "optionA": "Algiers",
     "optionB": "Paris",
     "optionC": "Tunis",
     "optionD": "Brazzaville",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee24f",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "From 1940 to 1942, what was the capital-in-exile of Free France?",
-    "correct_answer": "Brazzaville",
-    "__v": 0
+    "question": "From 1940 to 1942, what was the capital-in-exile of Free France?"
 }, {
-    "incorrect_answers": ["English", "Hindi", "Finnish", "Russian"],
+    // "incorrect_answers": ["English", "Hindi", "Finnish", "Russian"],
     "optionA": "English",
     "optionB": "Hindi",
     "optionC": "Finnish",
     "optionD": "Russian",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee253",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Which of the following is not in the Indo-European language family?",
-    "correct_answer": "Finnish",
-    "__v": 0
+    "question": "Which of the following is not in the Indo-European language family?"
 }, {
-    "incorrect_answers": ["Canada and Norway", "Australia and New Zealand", "United States and England", "France and Brazil"],
+    // "incorrect_answers": ["Canada and Norway", "Australia and New Zealand", "United States and England", "France and Brazil"],
     "optionA": "Canada and Norway",
     "optionB": "Australia and New Zealand",
     "optionC": "United States and England",
     "optionD": "France and Brazil",
     "ans": "D",
-    "_id": "5f234efb56bca10004bee252",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "Which countries participated in the Lobster War?",
-    "correct_answer": "France and Brazil",
-    "__v": 0
+    "question": "Which countries participated in the Lobster War?"
 }, {
-    "incorrect_answers": ["France, Russia, Germany", "England, Germany, Russia", "Germany, Spain, Austria", "Serbia, Russia, Croatia"],
+    // "incorrect_answers": ["France, Russia, Germany", "England, Germany, Russia", "Germany, Spain, Austria", "Serbia, Russia, Croatia"],
     "optionA": "France, Russia, Germany",
     "optionB": "England, Germany, Russia",
     "optionC": "Germany, Spain, Austria",
     "optionD": "Serbia, Russia, Croatia",
     "ans": "B",
-    "_id": "5f234efb56bca10004bee256",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "During World War I, which nation's monarchs were blood related?",
-    "correct_answer": "England, Germany, Russia",
-    "__v": 0
+    "question": "During World War I, which nation's monarchs were blood related?"
 }, {
-    "incorrect_answers": ["Louis XIV", "Louis XIII", "Louis XVI", "Louis XV"],
+    // "incorrect_answers": ["Louis XIV", "Louis XIII", "Louis XVI", "Louis XV"],
     "optionA": "Louis XIV",
     "optionB": "Louis XIII",
     "optionC": "Louis XVI",
     "optionD": "Louis XV",
     "ans": "A",
-    "_id": "5f234efb56bca10004bee257",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "Which Louis was known as \"The Sun King of France\"?",
-    "correct_answer": "Louis XIV",
-    "__v": 0
+    "question": "Which Louis was known as \"The Sun King of France\"?"
 }, {
-    "incorrect_answers": ["Kaiser Wilhelm", "Fredrick the 2nd", "Otto Von Bismark", "Robert Koch"],
+    // "incorrect_answers": ["Kaiser Wilhelm", "Fredrick the 2nd", "Otto Von Bismark", "Robert Koch"],
     "optionA": "Kaiser Wilhelm",
     "optionB": "Fredrick the 2nd",
     "optionC": "Otto Von Bismark",
     "optionD": "Robert Koch",
     "ans": "C",
-    "_id": "5f234efb56bca10004bee254",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Who was the first Chancellor of a united Germany in 1871?",
-    "correct_answer": "Otto Von Bismark",
-    "__v": 0
+    "question": "Who was the first Chancellor of a united Germany in 1871?"
 }, {
-    "incorrect_answers": ["Bob Denver", "Bob the Builder", "Bob Ross", "Bob Newhart"],
+    // "incorrect_answers": ["Bob Denver", "Bob the Builder", "Bob Ross", "Bob Newhart"],
     "optionA": "Bob Denver",
     "optionB": "Bob the Builder",
     "optionC": "Bob Ross",
     "optionD": "Bob Newhart",
     "ans": "C",
-    "_id": "5f297cb7f517e8001741f232",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "Who paints happy trees?",
-    "correct_answer": "Bob Ross",
-    "__v": 0
+    "question": "Who paints happy trees?"
 }, {
-    "incorrect_answers": ["Like each other", "Go to the movies", "Hang out", "Flock together"],
+    // "incorrect_answers": ["Like each other", "Go to the movies", "Hang out", "Flock together"],
     "optionA": "Like each other",
     "optionB": "Go to the movies",
     "optionC": "Hang out",
     "optionD": "Flock together",
     "ans": "D",
-    "_id": "5f3d3a3bfa8c6e00173f433d",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "Birds of a feather?",
-    "correct_answer": "Flock together",
-    "__v": 0
+    "question": "Birds of a feather?"
 }, {
-    "incorrect_answers": ["Marry her off", "Let her sing", "Frown at her", "Consider ear plugs"],
+    // "incorrect_answers": ["Marry her off", "Let her sing", "Frown at her", "Consider ear plugs"],
     "optionA": "Marry her off",
     "optionB": "Let her sing",
     "optionC": "Frown at her",
     "optionD": "Consider ear plugs",
     "ans": "A",
-    "_id": "5f3d8577201ad20017a0e815",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "What do you do with a girl like Maria?",
-    "correct_answer": "Marry her off",
-    "__v": 0
+    "question": "What do you do with a girl like Maria?"
 }, {
-    "incorrect_answers": ["Japanese highway", "Project management tool", "Tasty snack", "Hairstyle"],
+    // "incorrect_answers": ["Japanese highway", "Project management tool", "Tasty snack", "Hairstyle"],
     "optionA": "Japanese highway",
     "optionB": "Project management tool",
     "optionC": "Tasty snack",
     "optionD": "Hairstyle",
     "ans": "B",
-    "_id": "5f3d96a7201ad20017a0e817",
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "What is kanban?",
-    "correct_answer": "Project management tool",
-    "__v": 0
+    "question": "What is kanban?"
 }]
 
 // all declearations...
@@ -661,6 +391,7 @@ function refreshPage() {
     location.reload();
 }
 
+// i made this functions for separate input radio and labels actions for color changing...
 function selectA() {
     document.getElementById('radioA').checked = true;
     document.getElementById('labelA').style.color = fixcolor;
