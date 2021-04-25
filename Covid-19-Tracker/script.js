@@ -26,9 +26,11 @@ xhr.onload = function () {
                 <div class="container" id="${element.Country}">
                     <div class="country-data">
                         <h4 class="country">${element.Country}</h4>
-                        <p>Active Case : ${activeCases}</p>
-                        <p>Deaths : ${element.TotalDeaths}</p>
-                        <p>Recovered : ${element.TotalRecovered}</p>
+                        <p>New Cases : ${numberWithCommas(element.NewConfirmed)}</p>
+                        <p>New Deaths : ${numberWithCommas(element.NewDeaths)}</p>
+                        <p>Active Case : ${numberWithCommas(activeCases)}</p>
+                        <p>Deaths : ${numberWithCommas(element.TotalDeaths)}</p>
+                        <p>Recovered : ${numberWithCommas(element.TotalRecovered)}</p>
                     </div>
                 </div>
             `;
@@ -37,16 +39,20 @@ xhr.onload = function () {
             topCases.innerHTML = `
                 <div class="data">
                     <h4 class="country">Global</h4>
-                    <p>Active Case : ${activeCasesGlobal}</p>
-                    <p>Deaths : ${json.Global.TotalDeaths}</p>
-                    <p>Recovered : ${json.Global.TotalRecovered}</p>
+                    <p>New Cases : ${numberWithCommas(json.Global.NewConfirmed)}</p>
+                    <p>New Deaths : ${numberWithCommas(json.Global.NewDeaths)}</p>
+                    <p>Active Case : ${numberWithCommas(activeCasesGlobal)}</p>
+                    <p>Deaths : ${numberWithCommas(json.Global.TotalDeaths)}</p>
+                    <p>Recovered : ${numberWithCommas(json.Global.TotalRecovered)}</p>
                 </div>
                 <h1>V/S</h1>
                 <div class="data">
                     <h4 class="country">India</h4>
-                    <p>Active Case : ${activeCasesIndia}</p>
-                    <p>Deaths : ${json.Countries[76].TotalDeaths}</p>
-                    <p>Recovered : ${json.Countries[76].TotalRecovered}</p>
+                    <p>New Cases : ${numberWithCommas(json.Countries[76].NewConfirmed)}</p>
+                    <p>New Deaths : ${numberWithCommas(json.Countries[76].NewDeaths)}</p>
+                    <p>Active Case : ${numberWithCommas(activeCasesIndia)}</p>
+                    <p>Deaths : ${numberWithCommas(json.Countries[76].TotalDeaths)}</p>
+                    <p>Recovered : ${numberWithCommas(json.Countries[76].TotalRecovered)}</p>
                 </div>
             `;
         });
@@ -78,3 +84,15 @@ xhr.onload = function () {
     }
 }
 xhr.send();
+
+// function numberWithCommas(x) {
+//     x = x.toString();
+//     var pattern = /(-?\d+)(\d{3})/;
+//     while (pattern.test(x))
+//         x = x.replace(pattern, "$1,$2");
+//     return x;
+// }
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
