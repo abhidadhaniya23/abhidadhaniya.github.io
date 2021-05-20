@@ -195,8 +195,8 @@ html{
 .container p{
     font-size: 1.3rem;
     text-align: center;
-    margin: .2rem auto;
-    width: 300px;
+    margin: 1.2rem auto 2rem;
+    width: 400px;
     /* font-family: 'Courgette', cursive; */
 }
 .buttons{
