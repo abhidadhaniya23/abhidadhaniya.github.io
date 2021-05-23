@@ -175,10 +175,10 @@ function closeNewsCategory() {
 // })
 
 async function categoryOf(category) {
-    // newsCategoryTitle.innerText = `We are feaching news data for ${category} category.`;
+    // newsCategoryTitle.innerText = `We are fetching news data for ${category} category.`;
     loadingAnimation.style.opacity = '1';
     newsTopicsBody.innerHTML = `
-        <p class="news-category-loading">Please wait, We are featching ${category} category news for you.</p>
+        <p class="news-category-loading">Please wait, We are fetching ${category} category news for you.</p>
         <div class="loading-animation-for-category" id="loading-animation">
             <div class="blue-balls"></div>
             <div class="blue-balls"></div>
