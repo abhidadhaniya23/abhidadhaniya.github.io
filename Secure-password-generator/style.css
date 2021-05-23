@@ -317,6 +317,9 @@ svg{
     }
 }
 @media (max-width:420px){
+    .main-body{
+        transform: translateY(-5vh);
+    }
     #footer-section{
         padding: 3rem 0 2rem;
     }
