@@ -312,6 +312,7 @@ svg{
 
 @media (max-width:320px){
     .main-body{
+        transform: translateY(-10vh);
         width: 90%;
     }
 }
