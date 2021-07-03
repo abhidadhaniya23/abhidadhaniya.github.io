@@ -55,7 +55,7 @@ body {
 
 /* First section  :  Header */
 #first {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -334,10 +334,12 @@ body {
 /* Forth Section */
 #forth {
     height: auto;
-    background: linear-gradient(180deg, rgba(82, 44, 250, 0.582), rgba(30, 7, 134, 0.342)), url(bg.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    /* background-image: radial-gradient(circle at 50% -20.71%, #e459ea 0, #c84ded 16.67%, #a544f0 33.33%, #783cf2 50%, #2538f4 66.67%, #0039f5 83.33%, #003af6 100%); */
+    background: linear-gradient(180deg, rgb(82,44,250), rgb(58,22,216));
+    /* background: linear-gradient(180deg, rgba(82, 44, 250, 0.582), rgba(30, 7, 134, 0.342)), url(bg.jpg); */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* background-size: cover; */
 }
 
 #forth .content {
@@ -455,8 +457,13 @@ body {
     font-size: 20px;
 }
 
+#fifth-top{
+    position: relative;
+    top: 10px;
+}
+
 #fifth {
-    padding: 50px 0;
+    padding: 0px 0 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
