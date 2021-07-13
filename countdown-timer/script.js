@@ -127,6 +127,10 @@ let projectsData = [
         'hrefLocation': 'https://www.web-developer-abhi.tk/time-square/index.html'
     },
     {
+        'projectName': 'Secure Password Generator',
+        'hrefLocation': 'https://www.web-developer-abhi.tk/Secure-password-generator/index.html'
+    },
+    {
         'projectName': 'Covid-19 Tracker',
         'hrefLocation': 'https://www.web-developer-abhi.tk/Covid-19-Tracker/index.html'
     },
