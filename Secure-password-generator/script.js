@@ -137,6 +137,10 @@ let projectsData = [
         'hrefLocation': 'https://awesome-cheat-sheets.online/'
     },
     {
+        'projectName': 'Countdown Timer',
+        'hrefLocation': 'https://www.web-developer-abhi.tk/Countdown-timer/index.html'
+    },
+    {
         'projectName': 'Time Square News',
         'hrefLocation': 'https://www.web-developer-abhi.tk/time-square/index.html'
     },
