@@ -138,7 +138,7 @@ let projectsData = [
     },
     {
         'projectName': 'Countdown Timer',
-        'hrefLocation': 'https://www.web-developer-abhi.tk/Countdown-timer/index.html'
+        'hrefLocation': 'https://www.web-developer-abhi.tk/countdown-timer/index.html'
     },
     {
         'projectName': 'Time Square News',
